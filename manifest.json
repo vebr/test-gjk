@@ -1,0 +1,55 @@
+{
+  "name": "Gojek",
+  "short_name": "Gojek",
+  "description": "Lebih dari 1 juta driver Gojek siap melayani transportasi online, pesan antar makanan, kirim barang, belanja & pembayaran. Download Gojek sekarang!",
+  "lang": "id-ID",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#00AA13",
+  "icons": [
+    {
+      "src": "/media/icon/gojek-icon-32px.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/icon/gojek-icon-48px.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/icon/gojek-icon-96px.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/icon/gojek-icon-144px.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/icon/gojek-icon-192px.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/icon/gojek-icon-256px.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/media/icon/gojek-icon-512px.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#fff",
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "com.gojek.app",
+      "url": "https://play.google.com/store/apps/details?id=com.gojek.app&hl=en"
+    }
+  ]
+}
