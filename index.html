@@ -76,6 +76,18 @@
   <!--[if lt IE 7]>
       <p class="brow no-gutterssehappy">You are using an <strong>outdated</strong> brow no-guttersser. Please <a href="#">upgrade your brow no-guttersser</a> to improve your experience.</p>
     <![endif]-->
+  <div class="c-popup" id="js-popup">
+    <span class="close js-close-popup">Close <i class="gi gi-close"></i></span>
+    <div class="c-popup__content">
+      <div class="body">
+        <div id="js-popup-content" class="item-popup-content"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <header class="container-fluid header">
     <div class="container">
       <div class="row no-gutters align-items-center header__menu">
@@ -1037,7 +1049,8 @@
               <div class="container">
                 <div class="c-hero--banner-full__content u-text-align__center--mobile u-text-align__center--tablet">
                   <div class="row no-gutters">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-lg-6">
+                      <!-- I change this from col-md-6 to col-lg-6, because in the viewport 576px to 768px, the position of the div will be on the left and I think it's better to stay in the middle-->
                       <h1>Gojek Proudly Presents CERDIKIAWAN</h1>
 
                       <p>
@@ -1056,8 +1069,7 @@
 
                       <div class="u-hide--all" id="content-video-hero-2">
                         <div class="embed-responsive embed-responsive-21by9">
-                          <iframe class="embed-responsive-item"
-                            src="https://www.youtube.com/embed/viUwhsB00i8"
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/viUwhsB00i8"
                             frameborder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
@@ -1078,8 +1090,8 @@
     </section>
 
 
-    <section id="component-information-1" class="container-fluid c-section c-information ">
-      <div class="container c-information__wrapper px-2 px-md-0">
+    <section id="component-information-1" class="container-fluid c-section information ">
+      <div class="container information__wrapper px-md-3">
         <div class="row no-gutters align-items-center">
           <div class="col-12 col-lg-6 u-hide--tablet">
 
@@ -1087,26 +1099,26 @@
               <div class="col-12 u-lazy u-lazy__image no-gutters">
                 <img data-src="https://lelogama.go-jek.com/component/information/super-app.jpg"
                   data-srcset="https://lelogama.go-jek.com/cache/09/3c/093c11fd06be13dd8bde4b16a465348d.jpg 400w, https://lelogama.go-jek.com/cache/10/9c/109ce66398ab0d3d5ab386aaab6ae785.jpg 800w, https://lelogama.go-jek.com/cache/bb/86/bb862327e8e50b425964267cd735f8f9.jpg 3000w"
-                  class="col-12 lazy c-information__image" alt="Super App" type="image/jpeg">
+                  class="col-12 lazy information__image" alt="Super App" type="image/jpeg">
                 <div class="u-lazy__placeholder-2"></div>
               </div>
             </div>
 
           </div>
-          <div class="col-12 col-lg-6 c-information__text--right">
-            <h2 class="mb-2 c-information__title">
+          <div class="col-12 col-lg-6 information__text--right">
+            <h2 class="mb-2 information__title px-3">
               Meet Solv, Gojek’s new logo
             </h2>
 
             <div class="col-12 u-hide--desktop u-lazy u-lazy__image mb-2">
               <img data-src="https://lelogama.go-jek.com/component/information/super-app-mobile.jpg"
                 data-srcset="https://lelogama.go-jek.com/cache/40/40/40404f7b3f9d1adb502e93dd301c61d3.jpg 400w, https://lelogama.go-jek.com/cache/25/6d/256d0ab457a1167fdfa4a7e7313ed635.jpg 800w, https://lelogama.go-jek.com/cache/bb/d2/bbd25474274af2d1fefc073bdf17a27b.jpg 3000w"
-                class="col-12 lazy c-information__image--mobile" alt="Super App" type="image/jpeg">
+                class="col-12 lazy information__image--mobile px-0" alt="Super App" type="image/jpeg">
               <div class="u-lazy__placeholder-2"></div>
             </div>
 
 
-            <div class="mb-2 mb-md-4 c-information__description">
+            <div class="mb-2 mb-md-4 information__description px-3">
               Our new logo symbolizes Gojek’s transformation from being a ride-hailing service to becoming the largest
               Super App, with a variety of smart ways to eliminate hassles.
             </div>
@@ -1114,7 +1126,7 @@
 
             <div class="row no-gutters">
               <div class="col-auto">
-                <a href="about/index.html" class="c-information__link">Find Out Here<i
+                <a href="about/index.html" class="information__link px-3">Find Out Here<i
                     class="gi gi-arrow no-gutters-right"></i></a>
               </div>
             </div>
@@ -1133,7 +1145,7 @@
 
 
             <a href="goride/index.html">
-              <div class="col-12">
+              <div class="col-12 px-0 px-md-2">
                 <div class="c-hero--cards__wrapper">
                   <picture>
                     <source
@@ -1149,7 +1161,6 @@
                       srcset="https://lelogama.go-jek.com/cache/cb/2a/cb2a2ae55b2adc6ceec8f2cd17c097fc.jpg 400w, https://lelogama.go-jek.com/cache/48/55/4855809cb1bf238f0dc39e1a25829cb1.jpg 800w, https://lelogama.go-jek.com/cache/24/bf/24bf5ff2d62d2d66ac1e6a44e1518ba3.jpg 3000w"
                       alt="GO-JEK" type="image/jpeg">
                   </picture>
-
                 </div>
               </div>
             </a>
@@ -1161,23 +1172,22 @@
 
 
             <a href="gocar/index.html">
-              <div class="col-12">
+              <div class="col-12 px-0 px-md-2">
                 <div class="c-hero--cards__wrapper">
                   <picture>
-                    <source srcset="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp"
+                    <source src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp 400w, https://lelogama.go-jek.com/cache/e7/ae/e7ae70f755cb8acde2917c52f4089d5a.webp 800w, https://lelogama.go-jek.com/cache/2b/8c/2b8c80d1c81b2a57e3cc0642890ef22a.webp 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
-                    <source srcset="https://lelogama.go-jek.com/cache/b6/b6/b6b6d29a1cb58e83c4af0319c7be31a8.jpg"
+                    <source src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/b6/b6/b6b6d29a1cb58e83c4af0319c7be31a8.jpg 400w, https://lelogama.go-jek.com/cache/68/89/68898db246473a67bc6ba83fd3a0831b.jpg 800w, https://lelogama.go-jek.com/cache/6b/d9/6bd935ed29fd40502e974dbd71faa5c0.jpg 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
-                    <img src="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp"
+                    <img src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp 400w, https://lelogama.go-jek.com/cache/e7/ae/e7ae70f755cb8acde2917c52f4089d5a.webp 800w, https://lelogama.go-jek.com/cache/2b/8c/2b8c80d1c81b2a57e3cc0642890ef22a.webp 3000w"
                       alt="GO-JEK" type="image/webp">
-                    <img src="https://lelogama.go-jek.com/cache/22/62/22624d0e3a1dab0559fd64eba1d8ffa4.jpg"
+                    <img src="https://lelogama.go-jek.com/component/banner/picture_mobile/English_gocar_mobile.jpg"
                       srcset="https://lelogama.go-jek.com/cache/22/62/22624d0e3a1dab0559fd64eba1d8ffa4.jpg 400w, https://lelogama.go-jek.com/cache/8f/8b/8f8baeea17e9d3a795239e0818f6a47d.jpg 800w, https://lelogama.go-jek.com/cache/78/86/7886d9408aa59dd23a5c15dcc0c50586.jpg 3000w"
                       alt="GO-JEK" type="image/jpeg">
                   </picture>
-
                 </div>
               </div>
             </a>
@@ -1189,23 +1199,23 @@
 
 
             <a href="gofood/index.html">
-              <div class="col-12">
+              <div class="col-12 px-0 px-md-2">
                 <div class="c-hero--cards__wrapper">
                   <picture>
-                    <source srcset="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp"
+                    <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp 400w, https://lelogama.go-jek.com/cache/e7/12/e712b469c5ba82dfc12b28994c5c4943.webp 800w, https://lelogama.go-jek.com/cache/fb/4f/fb4fc1d92297b677190d004542fa133a.webp 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
-                    <source srcset="https://lelogama.go-jek.com/cache/30/dc/30dc1fae2db098f7698fefa813d61e19.jpg"
+                    <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/30/dc/30dc1fae2db098f7698fefa813d61e19.jpg 400w, https://lelogama.go-jek.com/cache/99/28/9928ce0309ebd9a8c31317e7609aa8e9.jpg 800w, https://lelogama.go-jek.com/cache/a1/7a/a17a94f2226490a44d0af15471dc3e07.jpg 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
-                    <img src="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp"
+                    <img src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp 400w, https://lelogama.go-jek.com/cache/e7/12/e712b469c5ba82dfc12b28994c5c4943.webp 800w, https://lelogama.go-jek.com/cache/fb/4f/fb4fc1d92297b677190d004542fa133a.webp 3000w"
                       alt="GO-JEK" type="image/webp">
-                    <img src="https://lelogama.go-jek.com/cache/ea/ab/eaabc0c21eea1ad5a83b826478583c34.jpg"
+                    <img
+                      src="https://lelogama.go-jek.com/component/banner/picture_mobile/Go-Food_English2x_mobile_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/ea/ab/eaabc0c21eea1ad5a83b826478583c34.jpg 400w, https://lelogama.go-jek.com/cache/00/eb/00eb158b9d1e8753f1300874217e1f0b.jpg 800w, https://lelogama.go-jek.com/cache/1f/b2/1fb204aad066b09c578eb661fb57154e.jpg 3000w"
                       alt="GO-JEK" type="image/jpeg">
                   </picture>
-
                 </div>
               </div>
             </a>
@@ -1217,10 +1227,10 @@
 
 
             <a href="gopay/index.html">
-              <div class="col-12">
+              <div class="col-12 px-0 px-md-2">
                 <div class="c-hero--cards__wrapper">
                   <picture>
-                    <source srcset="https://lelogama.go-jek.com/cache/a1/24/a124c043aff3e201f3111141b8390bb0.webp"
+                    <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
                       srcset="https://lelogama.go-jek.com/cache/a1/24/a124c043aff3e201f3111141b8390bb0.webp 400w, https://lelogama.go-jek.com/cache/1f/83/1f83acc5e58f0fa0eaba374af6c9a0a0.webp 800w, https://lelogama.go-jek.com/cache/5e/ba/5eba52e1c04e9568038e22f187051284.webp 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
                     <source srcset="https://lelogama.go-jek.com/cache/57/2a/572a7e524d3fbe4d556363e6ea45dda9.jpg"
@@ -1246,10 +1256,10 @@
       </div>
     </section>
     <section class="container-fluid c-section " id="component-service-1">
-      <div class="container px-2 px-md-0">
-        <div class="row no-gutters c-information__intro">
+      <div class="container px-md-0">
+        <div class="row no-gutters information__intro">
           <div class="col-12">
-            <h2 class="c-information__title c-information__title--medium">
+            <h2 class="information__title information__title--medium px-md-3">
               Our Services
             </h2>
 
@@ -1258,17 +1268,18 @@
 
 
         <div class="row no-gutters mb-4 mb-md-3">
-          <div class="col c-information-2 mb-2 mb-md-4">
-            <h3 class="mb-1 mb-md-2 c-information__title">Transport &amp; Logistics</h3>
+          <div class="col information-2 mb-2 mb-md-4 px-md-3">
+            <h3 class="mb-1 mb-md-2 information__title">Transport &amp; Logistics</h3>
 
-            <p class="c-information-2__description">Moving something (or someone) from point A to point B? Our Gojek
+            <p class="information-2__description">Moving something (or someone) from point A to point B? Our Gojek
               drivers in green jackets and helmets save your time, and energy.</p>
 
           </div>
 
 
-          <div class="col-12">
-            <div class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
+          <div class="col-12 pl-md-3">
+            <div
+              class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
               id="slider-service-1" data-slider-desktop="false,false,4,false,false,false,4"
               data-slider-mobile="true,false,2,false,false,false,2">
 
@@ -1277,7 +1288,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="goride/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/goride_icon_new.svg"
@@ -1297,7 +1308,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gocar/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gocar_icon_new.svg"
@@ -1319,7 +1330,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gosend/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gosend_icon_new.svg"
@@ -1339,7 +1350,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gobox/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gobox_icon_new.svg"
@@ -1361,17 +1372,18 @@
         </div>
 
         <div class="row no-gutters mb-4 mb-md-3">
-          <div class="col c-information-2 mb-2 mb-md-4">
-            <h3 class="mb-1 mb-md-2 c-information__title">Food &amp; FMCG</h3>
+          <div class="col information-2 mb-2 mb-md-4 px-md-3">
+            <h3 class="mb-1 mb-md-2 information__title">Food &amp; FMCG</h3>
 
-            <p class="c-information-2__description">Order food from a whole lotta restaurants, get medicines delivered
+            <p class="information-2__description">Order food from a whole lotta restaurants, get medicines delivered
               in a jiffy, or fill your shopping cart from many a mart.</p>
 
           </div>
 
 
-          <div class="col-12">
-            <div class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
+          <div class="col-12 pl-md-3">
+            <div
+              class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
               id="slider-service-4" data-slider-desktop="false,false,4,false,false,false,4"
               data-slider-mobile="true,false,2,false,false,false,2">
 
@@ -1380,7 +1392,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gofood/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gofood_icon_new.svg"
@@ -1400,7 +1412,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gofoodfestival/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/icon-gff.svg"
@@ -1421,7 +1433,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gomed/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gomed_icon_new.svg"
@@ -1449,26 +1461,27 @@
         </div>
 
         <div class="row no-gutters mb-4 mb-md-3">
-          <div class="col c-information-2 mb-2 mb-md-4">
-            <h3 class="mb-1 mb-md-2 c-information__title">Payments</h3>
+          <div class="col information-2 mb-2 mb-md-4">
+            <h3 class="mb-1 mb-md-2 information__title">Payments</h3>
 
-            <p class="c-information-2__description">From split the bills to donations, we make payments reliable, easy
+            <p class="information-2__description">From split the bills to donations, we make payments reliable, easy
               and delightful for our customers and merchants alike.</p>
 
           </div>
 
-          <div class="col-auto u-hide--tablet">
+          <div class="col-auto u-hide--tablet hide--tablet">
             <div class="row no-gutters slider-caret-arrow no-gutters">
-              <button class="slider-caret-arrow no-gutters__prev js-arrow no-gutters-slider-prev" data-slider-prev="#slider-service-3"
-                aria-label="Previous"></button>
-              <button class="slider-caret-arrow no-gutters__next js-arrow no-gutters-slider-next" data-slider-next="#slider-service-3"
-                aria-label="Next"></button>
+              <button class="slider-caret-arrow no-gutters__prev js-arrow no-gutters-slider-prev"
+                data-slider-prev="#slider-service-3" aria-label="Previous"></button>
+              <button class="slider-caret-arrow no-gutters__next js-arrow no-gutters-slider-next"
+                data-slider-next="#slider-service-3" aria-label="Next"></button>
             </div>
           </div>
 
 
           <div class="col-12">
-            <div class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
+            <div
+              class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
               id="slider-service-3" data-slider-desktop="false,false,4,false,false,false,4"
               data-slider-mobile="true,false,2,false,false,false,2">
 
@@ -1477,7 +1490,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gopay/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gopay_icon_new.svg"
@@ -1498,7 +1511,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gobills/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gobills_icon_new.svg"
@@ -1519,7 +1532,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gopoints/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gopoints_icon_new.svg"
@@ -1541,7 +1554,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="paylater/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/paylater_icon_new.svg"
@@ -1561,7 +1574,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gopulsa/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gopulsa_icon_new.svg"
@@ -1581,17 +1594,18 @@
         </div>
 
         <div class="row no-gutters mb-4 mb-md-3">
-          <div class="col c-information-2 mb-2 mb-md-4">
-            <h3 class="mb-1 mb-md-2 c-information__title">Daily Needs</h3>
+          <div class="col information-2 mb-2 mb-md-4">
+            <h3 class="mb-1 mb-md-2 information__title">Daily Needs</h3>
 
-            <p class="c-information-2__description">Those regular chores that call for your attention? We have all
+            <p class="information-2__description">Those regular chores that call for your attention? We have all
               products under daily needs to make your life simpler and hassle-free.</p>
 
           </div>
 
 
           <div class="col-12">
-            <div class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
+            <div
+              class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
               id="slider-service-2" data-slider-desktop="false,false,4,false,false,false,4"
               data-slider-mobile="true,false,2,false,false,false,2">
 
@@ -1600,7 +1614,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="gomassage/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gomassage_icon_new.svg"
@@ -1620,7 +1634,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="goclean/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/goclean_icon_new.svg"
@@ -1640,7 +1654,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="goauto/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/goauto_icon_new.svg"
@@ -1660,7 +1674,7 @@
               <div class="col-12 pr-2 pr-md-4">
 
                 <a href="goglam/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/goglam_icon_new.svg"
@@ -1688,17 +1702,18 @@
         </div>
 
         <div class="row no-gutters mb-4 mb-md-3">
-          <div class="col c-information-2 mb-2 mb-md-4">
-            <h3 class="mb-1 mb-md-2 c-information__title">News &amp; Entertainment</h3>
+          <div class="col information-2 mb-2 mb-md-4">
+            <h3 class="mb-1 mb-md-2 information__title">News &amp; Entertainment</h3>
 
-            <p class="c-information-2__description">Binge on your favourite series, book tickets to the next concert,
+            <p class="information-2__description">Binge on your favourite series, book tickets to the next concert,
               organise celebrity events, and do much more. All your treasured digital content belong here.</p>
 
           </div>
 
 
           <div class="col-12">
-            <div class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
+            <div
+              class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
               id="slider-service-5" data-slider-desktop="false,false,4,false,false,false,4"
               data-slider-mobile="true,false,2,false,false,false,2">
 
@@ -1708,10 +1723,10 @@
 
 
 
-              <div class="col-6 col-md-3 p-2">
+              <div class="col-5 col-sm-6 col-md-3 p-2">
 
                 <a href="gotix/index.html">
-                  <div class="c-card c-card__hover--down-high row no-gutters p-2">
+                  <div class="c-card c-card__hover--down-high row no-gutters px-3 py-2 p-2">
                     <div class="c-card__icon">
 
                       <img data-src="https://lelogama.go-jek.com/service_icon/gotix_icon_new.svg"
@@ -2231,7 +2246,7 @@
         }
       }
     });
-  </!--> -->
+  </!-->
 </body>
 
 </html>
