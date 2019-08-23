@@ -566,87 +566,6 @@ section.c-hero {
   }
 }
 
-.slick-slider .slick-arrow.slick-next {
-  position: absolute;
-  /*I change this from -3.5rem to -1.5rem,
-   because when the screen at 1024px above,
-   that's make user can scroll the page horizontally  */
-  right: -1.5rem;
-  top: 45%;
-  z-index: 1
-}
-
-.slick-slider .slick-arrow.slick-prev:after {
-  content: "" !important
-}
-
-.slick-slider .slick-arrow.slick-next:after,
-.slick-slider .slick-arrow.slick-prev:after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: .5rem;
-  bottom: 0;
-  margin: auto;
-  color: #00aa13;
-  font-family: gojekicon;
-  font-size: 1.5rem;
-  content: ""
-}
-
-
-.c-howto__card__info .slick-slider .slick-arrow.slick-next {
-  position: absolute;
-  right: 2rem;
-  top: 40%;
-  z-index: 5
-}
-
-.c-howto__card__info .slick-slider .slick-arrow.slick-next:after {
-  -webkit-transform: scale(-1, 1);
-  -moz-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1)
-}
-
-.c-howto__card__info .slick-slider .slick-arrow.slick-prev {
-  position: absolute;
-  left: 2rem;
-  top: 40%;
-  z-index: 5
-}
-
-.c-howto__card__info .slick-slider .slick-arrow.slick-next:after,
-.c-howto__card__info .slick-slider .slick-arrow.slick-prev:after {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: .5rem;
-  bottom: 0;
-  margin: auto;
-  color: #fff;
-  font-family: gojekicon;
-  font-size: 1.5rem;
-  content: ""
-}
-
-
-.slick-slider .slick-arrow.slick-prev {
-  position: absolute;
-  left: -1.5rem;
-  top: 45%;
-  z-index: 1
-}
-
-.slick-slider .slick-arrow.slick-prev:after {
-  content: ""
-}
-
-.slick-slider .slick-arrow.slick-disabled {
-  opacity: .5
-}
-
-
 .c-hero--cards__wrapper picture img {
   border-radius: 16px;
   position: absolute;
@@ -669,7 +588,7 @@ section.c-hero {
   .c-hero--cards__wrapper,
   .c-hero--cards__wrapper picture img {
     border-radius: 32px;
-    height: 440px
+    height: 320px
   }
 }
 

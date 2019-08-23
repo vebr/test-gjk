@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html class="no-js" style="overflow-x: hidden;" lang="en">
 <!--<![endif]-->
 
 <head>
@@ -38,7 +38,7 @@
   <meta name="msapplication-navbutton-color" content="#00AA13">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="msapplication-starturl" content="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   <link rel="icon" type="image/png" sizes="32x32" href="https://lelogama.go-jek.com/favicon/gojek_32px.png">
   <link rel="apple-touch-icon" type="image/png" sizes="32x32" href="https://lelogama.go-jek.com/favicon/gojek_32px.png">
@@ -64,12 +64,9 @@
     href="https://srv4.imgonline.com.ua/result_img/imgonline-com-ua-resize-AO6nHSR6Gw.png">
 
   <link rel="shortcut icon" href="https://lelogama.go-jek.com/favicon/gojek_32px.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/global.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
-
-
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/gojek.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/slick.css" />
 </head>
 
 <body>
@@ -427,7 +424,7 @@
 
 
   <div class="c-navigation-mobile container-fluid" id="c-navigation-mobile">
-    <div class="c-navigation-mobile__wrapper">
+    <div class="c-navigation-mobile__wrapper px-md-3">
 
       <div class="c-navigation-mobile__header row no-gutters">
         <div class="col-12 c-navigation-mobile__logo">
@@ -452,7 +449,7 @@
                 <ul class="c-treemenu__list active">
                   <div class="c-treemenu__list-title c-treemenu__list-title--language">
                     <div class="c-language-mobile row no-gutters js-toggler-parent">
-                      <span class="c-language-mobile__title js-toggler">
+                      <span class="c-language-mobile__title js-toggler pt-md-3"> <!-- I added the pt-md-3 class for mobile-language button, because at 768px it was too close for the separator -->
                         Language
                         <i class="c-language-mobile__title-icon gi gi-caret-down"></i>
                       </span>
@@ -487,7 +484,7 @@
                       Services
                       <i class="c-treemenu__icon gi gi-caret-right"></i>
                     </a>
-                    <ul class="c-treemenu__list">
+                    <ul class="c-treemenu__list pt-md-3">
                       <div class="c-treemenu__list-title">
                         <a class="c-treemenu__back" data-navbg="Current">
                           <i class="c-treemenu__icon gi gi-caret-left"></i>
@@ -779,7 +776,7 @@
                       Join Us
                       <i class="c-treemenu__icon gi gi-caret-right"></i>
                     </a>
-                    <ul class="c-treemenu__list">
+                    <ul class="c-treemenu__list pt-md-3">
                       <div class="c-treemenu__list-title">
                         <a class="c-treemenu__back" data-navbg="Current">
                           <i class="c-treemenu__icon gi gi-caret-left"></i>
@@ -997,13 +994,11 @@
   </div>
 
   <div class="c-language u-hide--tablet" id="c-language">
-    <form action="https://www.gojek.com/i18n/setlang/" method="post" class="u-hide-all" id="go-language-switcher-form">
-      <input type='hidden' name='csrfmiddlewaretoken'
-        value='Vsa6yskMwuOsfk4ydxvlx2AmBejTN2U3YVjRJf3KiHZc8locAje3Cl8IzBT3k45y' />
+    <form method="post" class="u-hide-all" id="go-language-switcher-form">
       <input name="next" type="hidden" value="">
       <input name="language" type="hidden">
     </form>
-    <div class="row no-gutters" id="go-language-switcher">
+    <div class="row" id="go-language-switcher-2">
       <div class="c-language__item col-12 " data-lang="id">
         Bahasa Indonesia <i class="gi gi-tick"></i>
       </div>
@@ -1106,11 +1101,11 @@
 
           </div>
           <div class="col-12 col-lg-6 information__text--right">
-            <h2 class="mb-2 information__title px-3">
+            <h2 class="mb-2 information__title px-md-3">
               Meet Solv, Gojek’s new logo
             </h2>
 
-            <div class="col-12 u-hide--desktop u-lazy u-lazy__image mb-2">
+            <div class="col-12 u-hide--desktop u-lazy u-lazy__image mb-2 px-0 px-md-3">
               <img data-src="https://lelogama.go-jek.com/component/information/super-app-mobile.jpg"
                 data-srcset="https://lelogama.go-jek.com/cache/40/40/40404f7b3f9d1adb502e93dd301c61d3.jpg 400w, https://lelogama.go-jek.com/cache/25/6d/256d0ab457a1167fdfa4a7e7313ed635.jpg 800w, https://lelogama.go-jek.com/cache/bb/d2/bbd25474274af2d1fefc073bdf17a27b.jpg 3000w"
                 class="col-12 lazy information__image--mobile px-0" alt="Super App" type="image/jpeg">
@@ -1118,7 +1113,7 @@
             </div>
 
 
-            <div class="mb-2 mb-md-4 information__description px-3">
+            <div class="mb-2 mb-md-4 information__description px-md-3">
               Our new logo symbolizes Gojek’s transformation from being a ride-hailing service to becoming the largest
               Super App, with a variety of smart ways to eliminate hassles.
             </div>
@@ -1126,8 +1121,8 @@
 
             <div class="row no-gutters">
               <div class="col-auto">
-                <a href="about/index.html" class="information__link px-3">Find Out Here<i
-                    class="gi gi-arrow no-gutters-right"></i></a>
+                <a href="about/index.html" class="information__link px-md-3">Find Out Here<i
+                    class="gi gi-arrow-right"></i></a>
               </div>
             </div>
 
@@ -1175,10 +1170,10 @@
               <div class="col-12 px-0 px-md-2">
                 <div class="c-hero--cards__wrapper">
                   <picture>
-                    <source src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
+                    <source srcset="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp 400w, https://lelogama.go-jek.com/cache/e7/ae/e7ae70f755cb8acde2917c52f4089d5a.webp 800w, https://lelogama.go-jek.com/cache/2b/8c/2b8c80d1c81b2a57e3cc0642890ef22a.webp 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
-                    <source src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
+                    <source srcset="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/b6/b6/b6b6d29a1cb58e83c4af0319c7be31a8.jpg 400w, https://lelogama.go-jek.com/cache/68/89/68898db246473a67bc6ba83fd3a0831b.jpg 800w, https://lelogama.go-jek.com/cache/6b/d9/6bd935ed29fd40502e974dbd71faa5c0.jpg 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
                     <img src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
@@ -1202,10 +1197,10 @@
               <div class="col-12 px-0 px-md-2">
                 <div class="c-hero--cards__wrapper">
                   <picture>
-                    <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
+                    <source srcset="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp 400w, https://lelogama.go-jek.com/cache/e7/12/e712b469c5ba82dfc12b28994c5c4943.webp 800w, https://lelogama.go-jek.com/cache/fb/4f/fb4fc1d92297b677190d004542fa133a.webp 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
-                    <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
+                    <source srcset="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
                       srcset="https://lelogama.go-jek.com/cache/30/dc/30dc1fae2db098f7698fefa813d61e19.jpg 400w, https://lelogama.go-jek.com/cache/99/28/9928ce0309ebd9a8c31317e7609aa8e9.jpg 800w, https://lelogama.go-jek.com/cache/a1/7a/a17a94f2226490a44d0af15471dc3e07.jpg 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
                     <img src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
@@ -1230,7 +1225,7 @@
               <div class="col-12 px-0 px-md-2">
                 <div class="c-hero--cards__wrapper">
                   <picture>
-                    <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
+                    <source srcset="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
                       srcset="https://lelogama.go-jek.com/cache/a1/24/a124c043aff3e201f3111141b8390bb0.webp 400w, https://lelogama.go-jek.com/cache/1f/83/1f83acc5e58f0fa0eaba374af6c9a0a0.webp 800w, https://lelogama.go-jek.com/cache/5e/ba/5eba52e1c04e9568038e22f187051284.webp 3000w"
                       media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
                     <source srcset="https://lelogama.go-jek.com/cache/57/2a/572a7e524d3fbe4d556363e6ea45dda9.jpg"
@@ -1461,7 +1456,7 @@
         </div>
 
         <div class="row no-gutters mb-4 mb-md-3">
-          <div class="col information-2 mb-2 mb-md-4">
+          <div class="col information-2 mb-2 mb-md-4 px-md-3">
             <h3 class="mb-1 mb-md-2 information__title">Payments</h3>
 
             <p class="information-2__description">From split the bills to donations, we make payments reliable, easy
@@ -1479,7 +1474,7 @@
           </div>
 
 
-          <div class="col-12">
+          <div class="col-12 px-md-3">
             <div
               class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
               id="slider-service-3" data-slider-desktop="false,false,4,false,false,false,4"
@@ -1594,7 +1589,7 @@
         </div>
 
         <div class="row no-gutters mb-4 mb-md-3">
-          <div class="col information-2 mb-2 mb-md-4">
+          <div class="col information-2 mb-2 mb-md-4 px-md-3">
             <h3 class="mb-1 mb-md-2 information__title">Daily Needs</h3>
 
             <p class="information-2__description">Those regular chores that call for your attention? We have all
@@ -1603,7 +1598,7 @@
           </div>
 
 
-          <div class="col-12">
+          <div class="col-12 px-md-3">
             <div
               class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
               id="slider-service-2" data-slider-desktop="false,false,4,false,false,false,4"
@@ -1702,7 +1697,7 @@
         </div>
 
         <div class="row no-gutters mb-4 mb-md-3">
-          <div class="col information-2 mb-2 mb-md-4">
+          <div class="col information-2 mb-2 mb-md-4 px-md-3">
             <h3 class="mb-1 mb-md-2 information__title">News &amp; Entertainment</h3>
 
             <p class="information-2__description">Binge on your favourite series, book tickets to the next concert,
@@ -1711,7 +1706,7 @@
           </div>
 
 
-          <div class="col-12">
+          <div class="col-12 px-md-3">
             <div
               class="row no-gutters js-slider-both same-height-items slider-no-gutter slider-list--shadow u-full-width-mb"
               id="slider-service-5" data-slider-desktop="false,false,4,false,false,false,4"
@@ -1744,7 +1739,6 @@
             </div>
           </div>
         </div>
-
 
       </div>
     </section>
@@ -2210,19 +2204,10 @@
     </div>
   </div>
 
-
-  <script src="/js/libs.js"></script>
+  <!-- I using default 2 js on gojek.com -->
+  <script src="/js/libs.js"></script> 
   <script src="/js/gojek.js"></script>
-  <script src="/js/app.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+  
   <script>
     // Check that service workers are supported
     if ('serviceWorker' in navigator) {
