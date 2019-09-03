@@ -792,7 +792,7 @@
   margin-left: 0;
 }
 
-.header~main.component-wrapper,section.c-hero {
+.header~main.component-wrapper,article.c-hero {
   margin-top: 3.5rem;
 }
 
@@ -2543,17 +2543,17 @@ i {
 }
 
 @media screen and (min-width:769px) {
-  section.c-hero {
+  article.c-hero {
     margin-top: 5rem;
   }
 }
 
-section.c-section {
+article.c-section {
   margin-bottom: 3.5rem;
 }
 
 @media screen and (min-width:769px) {
-  section.c-section {
+  article.c-section {
     margin-bottom: 6.5rem;
   }
 }
@@ -4002,7 +4002,7 @@ ul[gtype=dash]>li:before {
     height: 18px;
     width: 25px;
     position: fixed;
-    right: 0;
+    right: 2%;
     z-index: 14;
     margin: 19px 16px;
     top: 0;

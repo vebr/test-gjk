@@ -1744,31 +1744,31 @@ i {
 }
 
 @media screen and (min-width:769px) {
-  section.c-hero {
+  article.c-hero {
     margin-top: 5rem;
   }
 }
 
-section.c-hero--secondary-navbar {
+article.c-hero--secondary-navbar {
   margin-top: 7rem;
 }
 
 @media screen and (min-width:769px) {
-  section.c-hero--secondary-navbar {
+  article.c-hero--secondary-navbar {
     margin-top: 8rem;
   }
 }
 
-section.c-section {
+article.c-section {
   margin-bottom: 3.5rem;
 }
 
 @media screen and (min-width:769px) {
-  section.c-section {
+  article.c-section {
     margin-bottom: 6.5rem;
   }
 
-  section.c-section--secondary-navbar {
+  article.c-section--secondary-navbar {
     margin-top: 8rem;
   }
 }
@@ -6629,7 +6629,7 @@ body.go-play .c-card--info-step .c-card-item,body.go-play .c-card--info-step .c-
 }
 
 .header~main.component-wrapper,
-section.c-hero {
+article.c-hero {
   margin-top: 3.5rem
 }
 
