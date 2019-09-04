@@ -1406,3 +1406,605 @@ i {
 .i-arrow-down:before {
   content: "";
 }
+
+
+
+.section-1--banner__content p {
+  font-family: MaisonNeue-Book, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.section-1--banner__content h1 {
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  font-size: 21px;
+  line-height: 28px;
+}
+
+@media screen and (min-width:769px) {
+  .section-1__text--right {
+    padding-left: 95px;
+  }
+}
+
+@media screen and (width:800px) {
+  .section-1__text--right {
+    padding-left: 16px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .section-1__text--left {
+    padding-right: 95px;
+  }
+}
+
+@media screen and (width:800px) {
+  .section-1__text--left {
+    padding-right: 16px;
+  }
+}
+
+.section-1__title {
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+  color: #1c1d1d;
+}
+
+@media screen and (min-width:769px) {
+  .section-1__title {
+    line-height: 1.5;
+    font-size: 37px;
+    margin-bottom: 1rem;
+  }
+}
+
+.section-1__content {
+  font-family: MaisonNeue-Book, sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #494a4a;
+}
+
+.c-content-video__body .description b,.c-content-video__body .description strong,.section-1--banner-full__content p b,.section-1--banner-full__content p strong,.section-1--banner__content p b,.section-1--banner__content p strong,.section-1--cards__content p b,.section-1--cards__content p strong,.section-1__content b,.section-1__content strong {
+  font-weight: 700;
+  font-family: MaisonNeue-Demi, sans-serif;
+}
+
+.section-1--banner__content p em,.section-1--banner__content p i,.section-1__content em,.section-1__content i {
+  font-family: MaisonNeue-BookItalic, sans-serif;
+}
+
+@media screen and (min-width:769px) {
+  .section-1__content {
+    font-size: 1rem;
+  }
+}
+
+.section-1__image {
+  border-radius: 16px;
+}
+
+.section-1__image--mobile {
+  border-radius: 16px;
+  min-height: 207px;
+}
+
+.section-1--banner {
+  position: relative;
+}
+
+.section-1--banner__content {
+  position: relative;
+  padding: 1rem;
+  color: #fff;
+  height: 480px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end !important;
+  -webkit-align-items: flex-end !important;
+  -moz-box-align: end !important;
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+}
+
+.section-1--banner__content .row {
+  min-width: 100%;
+}
+
+.section-1--banner__content p {
+  line-height: 1.33;
+  font-size: 18px;
+}
+
+.section-1--banner__content h1 {
+  line-height: 1.38;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.section-1--banner__content h1 em,.section-1--banner__content h1 i {
+  font-style: italic;
+}
+
+.section-1--banner__content__action a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.section-1--banner__content__action a button {
+  cursor: pointer;
+  color: #fff;
+  background: rgba(0, 0, 0, .35);
+  border-radius: 24px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 18px;
+  border: unset;
+  padding: 0 2rem;
+  font-family: MaisonNeue-Demi, sans-serif;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner__content__action a button {
+    min-width: 163px;
+  }
+}
+
+.section-1--banner__content__action a:first-child {
+  margin-right: 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner__content__action a:first-child {
+    margin-right: 2rem;
+  }
+}
+
+.section-1--banner__content__action a:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner__content__action a {
+    width: auto;
+  }
+
+  .section-1--banner__content {
+    height: 568px;
+    padding: 0 2rem;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -moz-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+
+  .section-1--banner__content p {
+    font-size: 21px;
+  }
+
+  .section-1--banner__content h1 {
+    line-height: 1.33;
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1681px) {
+  .section-1--banner__content {
+    height: 620px;
+  }
+}
+
+.section-1--banner__wrapper {
+  position: relative;
+  background: #bbb;
+  height: 480px;
+  max-width: initial;
+  width: auto;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.section-1--banner__wrapper picture img {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 480px;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner__wrapper picture img {
+    height: 568px;
+    border-radius: 32px;
+  }
+}
+
+@media screen and (min-width:1681px) {
+  .section-1--banner__wrapper picture img {
+    height: 620px;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner__wrapper {
+    height: 568px;
+    border-radius: 32px;
+  }
+}
+
+@media screen and (min-width:1681px) {
+  .section-1--banner__wrapper {
+    height: 620px;
+  }
+}
+
+.section-1--banner-full {
+  position: relative;
+}
+
+.section-1--banner-full__content {
+  position: relative;
+  padding: 1.5rem 0;
+  color: #fff;
+  height: 480px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end !important;
+  -webkit-align-items: flex-end !important;
+  -moz-box-align: end !important;
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
+}
+
+.section-1--banner-full__content .row {
+  min-width: 100%;
+}
+
+.section-1--banner-full__content p {
+  font-family: MaisonNeue-Book, sans-serif;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+.section-1--banner-full__content p em,.section-1--banner-full__content p i {
+  font-family: MaisonNeue-BookItalic, sans-serif;
+}
+
+.section-1--banner-full__content h1 {
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  line-height: 1.2;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+.section-1--banner-full__content h1 em,.section-1--banner-full__content h1 i {
+  font-style: italic;
+}
+
+.section-1--banner-full__content__action a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.section-1--banner-full__content__action a button {
+  cursor: pointer;
+  color: #fff;
+  background: rgba(0, 0, 0, .35);
+  border-radius: 24px;
+  min-width: 85%;
+  max-width: 100%;
+  min-height: 40px;
+  font-size: 1rem;
+  border: unset;
+  padding: 0 2rem;
+  font-family: MaisonNeue-Demi, sans-serif;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner-full__content__action a button {
+    min-width: 163px;
+  }
+}
+
+.section-1--banner-full__content__action a:first-child {
+  margin-right: 0;
+  margin-top: 0;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner-full__content__action a:first-child {
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+}
+
+.section-1--banner-full__content__action a:last-child {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner-full__content__action a:last-child {
+    margin-top: 0;
+  }
+}
+
+.section-1--banner-full__content__action a:only-of-type {
+  margin-top: 0;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner-full__content__action a {
+    width: auto;
+    text-align: left;
+  }
+
+  .section-1--banner-full__content {
+    height: 568px;
+    padding: 0;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -moz-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+  }
+
+  .section-1--banner-full__content p {
+    font-size: 1.75rem;
+  }
+
+  .section-1--banner-full__content h1 {
+    line-height: 1.2;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width:1681px) {
+  .section-1--banner-full__content {
+    height: 800px;
+  }
+
+  .section-1--banner-full__content p {
+    font-size: 2rem;
+  }
+
+  .section-1--banner-full__content h1 {
+    line-height: 1.2;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width:1921px) {
+  .section-1--banner-full__content {
+    height: 990px;
+  }
+
+  .section-1--banner-full__content p {
+    font-size: 2.25rem;
+  }
+
+  .section-1--banner-full__content h1 {
+    line-height: 1.2;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.section-1--banner-full__wrapper {
+  position: relative;
+  background: #bbb;
+  height: 480px;
+  max-width: initial;
+  width: auto;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.section-1--banner-full__wrapper picture img {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 480px;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner-full__wrapper picture img {
+    height: 568px;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width:1681px) {
+  .section-1--banner-full__wrapper picture img {
+    height: 800px;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width:1921px) {
+  .section-1--banner-full__wrapper picture img {
+    height: 990px;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .section-1--banner-full__wrapper {
+    height: 568px;
+    border-radius: 0;
+  }
+}
+
+@media screen and (min-width:1681px) {
+  .section-1--banner-full__wrapper {
+    height: 800px;
+  }
+}
+
+@media screen and (min-width:1921px) {
+  .section-1--banner-full__wrapper {
+    height: 990px;
+  }
+}
+
+.section-1--banner-full__iframe {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  padding-top: 1rem;
+  position: relative;
+}
+
+.section-1--banner-full__iframe h1 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+}
+
+.section-1--banner-full__iframe .close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 18px;
+  color: #fff;
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  cursor: pointer;
+}
+
+.section-1--banner-full__iframe .close i {
+  color: #000;
+  background-color: #fff;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+
+.section-1--cards {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.section-1--cards a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.section-1--cards__content {
+  padding: 0 1rem;
+  color: #fff;
+  height: 220px;
+}
+
+.section-1--cards__content .row {
+  min-width: 100%;
+}
+
+.section-1--cards__content p {
+  font-family: MaisonNeue-Book, sans-serif;
+  line-height: 1.33;
+  font-size: 18px;
+}
+
+.section-1--cards__content p em,.section-1--cards__content p i {
+  font-family: MaisonNeue-BookItalic, sans-serif;
+}
+
+.section-1--cards__content h1 {
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  line-height: 1.38;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.section-1--cards__content h1 em,.section-1--cards__content h1 i {
+  font-style: italic;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--cards__content {
+    height: 320px;
+  }
+
+  .section-1--cards__content p {
+    font-size: 21px;
+  }
+
+  .section-1--cards__content h1 {
+    line-height: 1.33;
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width:1681px) {
+  .section-1--cards__content {
+    height: 580px;
+  }
+}
+
+.section-1--cards__wrapper {
+  position: relative;
+  background: #bbb;
+  margin-left: auto;
+  margin-right: .5rem;
+  height: 220px;
+  max-width: initial;
+  width: auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media screen and (min-width:769px) {
+  .section-1--cards {
+    padding-left: unset;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .section-1--font-2 h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (min-width:1921px) {
+  .section-1--font-2 h1 {
+    font-size: 4.5rem;
+  }
+}
