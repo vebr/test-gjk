@@ -1,13 +1,9 @@
-:root,
-body {
-  margin: 0;
+/* Overriding default css bootstrap for following base rule of gojek.com itself */
+:root,body {
   padding: 0;
-  background-color: #fff;
-  color: #494a4a;
-  font-family: MaisonNeue-Book, sans-serif;
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: left;
+  color: #494a4a !important;
+  font-size: 16px !important;
+  line-height: 1.4 !important;
   font-family: "MaisonNeue-Book",sans-serif !important;
 }
 
@@ -148,8 +144,7 @@ header {
   margin-left: 0;
 }
 
-.header~main.component-wrapper,
-section.c-hero {
+.header~main.component-wrapper {
   margin-top: 3.5rem;
 }
 
@@ -645,67 +640,10 @@ i {
 }
 
 @media screen and (min-width:769px) {
-  .c-card__images {
-    height: 170px;
-    border-radius: 8px;
-  }
-
-  .c-card__images__content {
-    padding: 0 2rem;
-    height: 170px;
-  }
-
-  .c-card__images__content__title {
-    line-height: 1.25;
-    letter-spacing: .7px;
-  }
-
-  .c-card__images picture img {
-    height: 170px;
+  .section-wrapper {
+    margin-top: 5rem !important;
   }
 }
-
-.c-card__images--with-footer,.c-card__images--with-footer picture img {
-  height: 150px;
-}
-
-.c-card__images--with-footer__content {
-  padding: 0 .5rem;
-  height: 110px;
-}
-
-.c-card__images--with-footer__content__title {
-  text-align: center;
-  font-size: 1rem;
-  color: #fff;
-  font-weight: 700;
-  line-height: 1.56;
-  letter-spacing: .6px;
-}
-
-.c-card__icon,.c-card__images--with-footer__footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c-card__images--with-footer__footer {
-  height: 40px;
-  background: #1c1d1d;
-  color: #fff;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  text-decoration: none;
-}
-
-.c-card__images--with-footer__footer p {
-  font-size: .75rem;
-}
-
 
 .footer {
   background-color: #1c1d1d;
@@ -721,19 +659,6 @@ i {
 
 .footer .container {
   padding: 0;
-}
-
-.c-card-item__footer {
-  margin-top: 32px;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.c-card-item__footer>p {
-  font-size: 1rem;
-  line-height: 24px;
-  min-height: 24px;
 }
 
 .footer-item--dropdown .footer-item__title,.footer-item--location .footer-item__title {
