@@ -1,7 +1,7 @@
 // Look for .hamburger
 const hamburger = document.querySelector(".hamburger");
 const sidebar = document.getElementById("mobile-navigation");
-// On click
+
 hamburger.addEventListener("click", function () {
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
@@ -12,6 +12,4 @@ hamburger.addEventListener("click", function () {
     sidebar.style.width = "0px";
     sidebar.style.opacity = "0";
   }
-  console.log(hamburger.classList)
-  // Do something else, like open/close menu
 });

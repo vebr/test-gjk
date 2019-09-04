@@ -584,6 +584,16 @@ i {
 
 .section-banner__wrapper, .section-information__wrapper, .section-service__wrapper {
   position: relative;
+  max-width: initial;
+  width: auto;
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 3.5rem;
+}
+
+
+.section-banner__wrapper--base, .section-information__wrapper--base, .section-service__wrapper--base {
+  position: relative;
   background: #bbb;
   max-width: initial;
   width: auto;
@@ -597,7 +607,12 @@ i {
   height: 480px;
 }
 
-
+@media screen and (min-width:769px) {
+  .section-banner__wrapper {
+    height: 568px;
+    margin-bottom: 6.5rem;
+  }  
+}
 .c-card__images__footer {
   height: 40px;
   background: #1c1d1d;
@@ -1261,7 +1276,7 @@ i {
   content: "";
 }
 
-.i-icon-solid-gopay:before {
+.i-AAAAAA-solid-gopay:before {
   content: "";
 }
 
@@ -1468,7 +1483,7 @@ i {
   color: #494a4a;
 }
 
-.c-content-video__body .description b,.c-content-video__body .description strong,.section-1--banner-full__content p b,.section-1--banner-full__content p strong,.section-1--banner__content p b,.section-1--banner__content p strong,.section-1--cards__content p b,.section-1--cards__content p strong,.section-1__content b,.section-1__content strong {
+.section-1--banner-full__content p b,.section-1--banner-full__content p strong,.section-1--banner__content p b,.section-1--banner__content p strong , .section-1__content b,.section-1__content strong {
   font-weight: 700;
   font-family: MaisonNeue-Demi, sans-serif;
 }
@@ -1885,88 +1900,247 @@ i {
   }
 }
 
-.section-1--banner-full__iframe {
-  background-color: #000;
-  color: #fff;
-  width: 100%;
-  padding-top: 1rem;
+@media screen and (max-width:768px) {
+  .section-1--font-2 h1 {
+    font-size: 1.75rem;
+  }
+}
+
+
+@media screen and (min-width:769px) {
+  .information__text--right {
+    padding-left: 22px !important;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .information__text--right {
+    padding-left: 90px !important;
+  }
+}
+
+.information__title {
+  color: #1c1d1d;
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  line-height: 1.41;
+}
+
+@media screen and (max-width:767px) {
+  .information__title {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .information__title {
+    font-size: 32px;
+  }
+}
+
+.information__title--medium {
+  font-size: 24px;
+}
+
+@media screen and (min-width:768px) {
+  .information__title--medium {
+    font-size: 37px;
+  }
+}
+
+.information__title--sub {
+  font-size: 21px;
+}
+
+@media screen and (min-width:768px) {
+  .information__title--sub {
+    font-size: 28px;
+  }
+}
+
+.information__video-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.section-1--banner-full__iframe h1 {
-  font-size: 18px;
-  margin-bottom: 1rem;
+.information__wrapper {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.information__image {
+  border-radius: 16px;
+}
+
+.information__image--mobile {
+  border-radius: 16px;
+  min-height: 207px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.information__intro {
+  color: #1c1d1d;
   font-family: MaisonNeueExtended-Bold, sans-serif;
+  font-size: 24px;
+  margin-bottom: 24px;
+  line-height: 1.33;
 }
 
-.section-1--banner-full__iframe .close {
+@media screen and (min-width:769px) {
+  .information__intro {
+    font-size: 37px;
+    margin-bottom: 48px;
+    line-height: 1.41;
+  }
+}
+
+.information__intro--medium {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width:769px) {
+  .information__intro--medium {
+    margin-bottom: 48px;
+  }
+}
+
+.information__description {
+  font-family: MaisonNeue-Book, sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.information-2__description p,.information__description p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width:769px) {
+  .information__description {
+    line-height: 1.33;
+  }
+}
+
+.information__link {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #00aa13;
+  text-decoration: none;
+  font-family: MaisonNeue-Demi, sans-serif;
+  width: auto;
+}
+
+.information__link .gi {
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+.information__link:after {
+  content: '';
   position: absolute;
-  right: 1rem;
-  top: 1rem;
-  font-size: 18px;
-  color: #fff;
-  font-family: MaisonNeueExtended-Bold, sans-serif;
-  cursor: pointer;
+  width: -moz-calc(100% - 16px);
+  width: calc(100% - 16px);
+  height: 2px;
+  background-color: #00aa13;
+  visibility: hidden;
+  bottom: -2px;
+  left: 0;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
 }
 
-.section-1--banner-full__iframe .close i {
-  color: #000;
-  background-color: #fff;
-  padding: 2px 4px;
-  border-radius: 50%;
+.information__link:hover:after {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+  visibility: visible;
 }
 
-.section-1--cards {
+
+.information-1 {
   position: relative;
   padding-left: 1rem;
 }
 
-.section-1--cards a {
+.information-1 a {
   width: 100%;
   text-decoration: none;
 }
 
-.section-1--cards__content {
+.information-1__content {
   padding: 0 1rem;
   color: #fff;
   height: 220px;
 }
 
-.section-1--cards__content .row {
+.information-1__content .row {
   min-width: 100%;
 }
 
-.section-1--cards__content p {
+.information-1__content p {
   font-family: MaisonNeue-Book, sans-serif;
   line-height: 1.33;
   font-size: 18px;
 }
 
-.section-1--cards__content p em,.section-1--cards__content p i {
+.information-1__content p em,.information-1__content p i {
   font-family: MaisonNeue-BookItalic, sans-serif;
 }
 
-.section-1--cards__content h1 {
+.information-1__content h1 {
   font-family: MaisonNeueExtended-Bold, sans-serif;
   line-height: 1.38;
   font-size: 28px;
   margin-bottom: 8px;
 }
 
-.section-1--cards__content h1 em,.section-1--cards__content h1 i {
+.information-1__content h1 em,.information-1__content h1 i {
   font-style: italic;
 }
 
 @media screen and (min-width:769px) {
-  .section-1--cards__content {
+  .information-1__content {
     height: 320px;
   }
 
-  .section-1--cards__content p {
+  .information-1__content p {
     font-size: 21px;
   }
 
-  .section-1--cards__content h1 {
+  .information-1__content h1 {
     line-height: 1.33;
     font-size: 42px;
     margin-bottom: 16px;
@@ -1974,12 +2148,12 @@ i {
 }
 
 @media screen and (min-width:1681px) {
-  .section-1--cards__content {
+  .information-1__content {
     height: 580px;
   }
 }
 
-.section-1--cards__wrapper {
+.information-1__wrapper {
   position: relative;
   background: #bbb;
   margin-left: auto;
@@ -1992,19 +2166,45 @@ i {
 }
 
 @media screen and (min-width:769px) {
-  .section-1--cards {
+  .information-1 {
     padding-left: unset;
   }
 }
 
-@media screen and (max-width:768px) {
-  .section-1--font-2 h1 {
-    font-size: 1.75rem;
+.information-1--cards__wrapper {
+  position: relative;
+}
+
+.information-1--cards__wrapper picture img {
+  border-radius: 16px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 220px;
+  float:left;
+}
+
+
+@media screen and (min-width:769px) {
+  .information-1--cards__wrapper {
+    margin-right: 0
+  }
+  .information-1--cards__wrapper,
+  .information-1--cards__wrapper picture img {
+    border-radius: 32px;
+    height: 320px
   }
 }
 
-@media screen and (min-width:1921px) {
-  .section-1--font-2 h1 {
-    font-size: 4.5rem;
+@media screen and (min-width:1681px) {
+
+  .information-1--cards__wrapper,
+  .information-1--cards__wrapper picture img {
+    height: 580px
   }
 }
