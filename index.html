@@ -65,7 +65,7 @@
 </head>
 
 <body>
-  <header class="container-fluid">
+  <header id="header" class="container-fluid">
     <div class="container">
       <div class="row no-gutters align-items-center header__menu">
 
@@ -85,8 +85,8 @@
                 About Us
               </a>
             </li>
-            <li class="col-auto header__link-item js-toggler-parent" id="link-item-service">
-              <a href="javascript:void(0)" class="js-toggler js-menu-secondary row no-gutters align-items-center">
+            <li class="col-auto header__link-item" id="link-item-service">
+              <a href="javascript:void(0)" class= js-menu-secondary row no-gutters align-items-center">
                 Services
                 <i class=" i i-caret-down"></i>
               </a>
@@ -102,8 +102,8 @@
                 Help Centre
               </a>
             </li>
-            <li class="col-auto header__link-item js-toggler-parent" id="link-item-join">
-              <a href="javascript:void(0)" class="js-toggler js-menu-secondary row no-gutters align-items-center">
+            <li class="col-auto header__link-item" id="link-item-join">
+              <a href="javascript:void(0)" class= js-menu-secondary row no-gutters align-items-center">
                 Join Us
                 <i class=" i i-caret-down"></i>
               </a>
@@ -120,7 +120,7 @@
         <div class="col-auto">
           <div class="container">
             <div class="row no-gutters justify-content-end u-hide--tablet">
-              <div class="col col-auto" data-toggle="#c-language,#c-link-menu-lang">
+              <div class="col col-auto">
                 <div class="row no-gutters align-items-center header__link o-cursor__pointer">
                   <div id="c-link-menu-lang"
                     class="col header__link-item header__link-item__lang pr-md-1 row no-gutters align-items-center">
@@ -157,10 +157,18 @@
         </div>
       </div>
       <!-- <hr /> -->
-      <div class="row no-gutters align-items-center mt-2">
-        <div class="col-12 text-right">
+      <div class="row no-gutters align-items-center mt-2 pb-3">
+        <div class="col-12 text-right mobile-language__wrapper">
           <span class="mr-1 mobile-language">Language
             <i class="mobile-language__title-icon i i-caret-down"></i></span>
+            <ul class="mobile-language__switcher">
+                <li class="mobile-language__switcher-item " data-lang="id">
+                    Bahasa Indonesia
+                </li>
+                <li class="mobile-language__switcher-item active" data-lang="en">
+                    English
+                </li>
+            </ul>
         </div>
       </div>
       <nav class="mnav-tree__container">
@@ -254,7 +262,7 @@
 
     <!-- I use <article> tag instead of <section> because this component will contains information about something,
         and I think using the tag <article> make this component looks more semantic -->
-    <article class="container section-information__wrapper">
+    <article class="container si__wrapper">
       <div class="container px-0">
         <div class="row no-gutters align-items-center">
           <div class="col-12 col-lg-6 u-hide--tablet u-lazy u-lazy__image">
@@ -297,125 +305,111 @@
       </div>
     </article>
 
-    <section class="container section-information__wrapper">
+    <section class="si__wrapper">
       <div class="container px-0">
         <div class="information-1 information-1--cards">
-          <div class="row">
+          <div class="row no-gutters">
             <div class="information-1__slider-wrapper">
-              <div>
+              <div class="row no-gutters">
                 <a href="https://www.gojek.com/goride/">
-                  <div class="col-12">
-                    <div class="information-1--cards__wrapper">
-                      <picture>
-                        <source
-                          src="https://lelogama.go-jek.com/component/banner/picture/english2x_goride_eng_desktop.jpg"
-                          srcset="https://lelogama.go-jek.com/cache/e4/f0/e4f0751ff86f43f479c394036f2b00e1.webp 400w, https://lelogama.go-jek.com/cache/d8/fc/d8fc3edd3afec2ca6c03605169ac767f.webp 800w, https://lelogama.go-jek.com/cache/99/1e/991e329ebb01d68dfadf0dd606b4a4cb.webp 3000w"
-                          media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
-                        <source
-                          src="https://lelogama.go-jek.com/component/banner/picture/english2x_goride_eng_desktop.jpg"
-                          srcset="https://lelogama.go-jek.com/cache/5c/a2/5ca22bf029c6e58a43e4b9469f39cfbf.jpg 400w, https://lelogama.go-jek.com/cache/c8/63/c863156106bdbcfb56b4e5086be43c47.jpg 800w, https://lelogama.go-jek.com/cache/b6/80/b680c53ab6bebbeaf87a76970fcf1d2d.jpg 3000w"
-                          media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
-                        <img src="https://lelogama.go-jek.com/component/banner/picture/english2x_goride_eng_desktop.jpg"
-                          srcset="https://lelogama.go-jek.com/cache/e4/f0/e4f0751ff86f43f479c394036f2b00e1.webp 400w, https://lelogama.go-jek.com/cache/d8/fc/d8fc3edd3afec2ca6c03605169ac767f.webp 800w, https://lelogama.go-jek.com/cache/99/1e/991e329ebb01d68dfadf0dd606b4a4cb.webp 3000w"
-                          alt="GO-JEK" type="image/webp">
-                        <img
-                          src="https://lelogama.go-jek.com/component/banner/picture_mobile/english_go-ride2x_mobile_2.jpg"
-                          srcset="https://lelogama.go-jek.com/cache/cb/2a/cb2a2ae55b2adc6ceec8f2cd17c097fc.jpg 400w, https://lelogama.go-jek.com/cache/48/55/4855809cb1bf238f0dc39e1a25829cb1.jpg 800w, https://lelogama.go-jek.com/cache/24/bf/24bf5ff2d62d2d66ac1e6a44e1518ba3.jpg 3000w"
-                          alt="GO-JEK" type="image/jpeg">
-                      </picture>
-
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a href="https://www.gojek.com/gocar/" class="slick-slide" style="width: 328px;" tabindex="-1"
-                  role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" data-slick-index="1"
-                  aria-hidden="true">
-                  <div class="col-12">
-                    <div class="information-1--cards__wrapper">
-                      <picture>
-                        <source src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
-                          srcset="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp 400w, https://lelogama.go-jek.com/cache/e7/ae/e7ae70f755cb8acde2917c52f4089d5a.webp 800w, https://lelogama.go-jek.com/cache/2b/8c/2b8c80d1c81b2a57e3cc0642890ef22a.webp 3000w"
-                          media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
-                        <source src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
-                          srcset="https://lelogama.go-jek.com/cache/b6/b6/b6b6d29a1cb58e83c4af0319c7be31a8.jpg 400w, https://lelogama.go-jek.com/cache/68/89/68898db246473a67bc6ba83fd3a0831b.jpg 800w, https://lelogama.go-jek.com/cache/6b/d9/6bd935ed29fd40502e974dbd71faa5c0.jpg 3000w"
-                          media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
-                        <img src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
-                          srcset="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp 400w, https://lelogama.go-jek.com/cache/e7/ae/e7ae70f755cb8acde2917c52f4089d5a.webp 800w, https://lelogama.go-jek.com/cache/2b/8c/2b8c80d1c81b2a57e3cc0642890ef22a.webp 3000w"
-                          alt="GO-JEK" type="image/webp">
-                        <img src="https://lelogama.go-jek.com/component/banner/picture_mobile/English_gocar_mobile.jpg"
-                          srcset="https://lelogama.go-jek.com/cache/22/62/22624d0e3a1dab0559fd64eba1d8ffa4.jpg 400w, https://lelogama.go-jek.com/cache/8f/8b/8f8baeea17e9d3a795239e0818f6a47d.jpg 800w, https://lelogama.go-jek.com/cache/78/86/7886d9408aa59dd23a5c15dcc0c50586.jpg 3000w"
-                          alt="GO-JEK" type="image/jpeg">
-                      </picture>
-
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div>
-              <a href="https://www.gojek.com/gofood/" class="slick-slide" style="width: 328px;" tabindex="-1"
-                role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" data-slick-index="2"
-                aria-hidden="true">
-                <div class="col-12">
-                  <div class="information-1--cards__wrapper">
+                  <div class=" col-12 information-1--cards__wrapper pl-0 pr-2">
                     <picture>
-                      <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
-                        srcset="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp 400w, https://lelogama.go-jek.com/cache/e7/12/e712b469c5ba82dfc12b28994c5c4943.webp 800w, https://lelogama.go-jek.com/cache/fb/4f/fb4fc1d92297b677190d004542fa133a.webp 3000w"
+                      <source
+                        src="https://lelogama.go-jek.com/component/banner/picture/english2x_goride_eng_desktop.jpg"
+                        srcset="https://lelogama.go-jek.com/cache/e4/f0/e4f0751ff86f43f479c394036f2b00e1.webp 400w, https://lelogama.go-jek.com/cache/d8/fc/d8fc3edd3afec2ca6c03605169ac767f.webp 800w, https://lelogama.go-jek.com/cache/99/1e/991e329ebb01d68dfadf0dd606b4a4cb.webp 3000w"
                         media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
-                      <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
-                        srcset="https://lelogama.go-jek.com/cache/30/dc/30dc1fae2db098f7698fefa813d61e19.jpg 400w, https://lelogama.go-jek.com/cache/99/28/9928ce0309ebd9a8c31317e7609aa8e9.jpg 800w, https://lelogama.go-jek.com/cache/a1/7a/a17a94f2226490a44d0af15471dc3e07.jpg 3000w"
+                      <source
+                        src="https://lelogama.go-jek.com/component/banner/picture/english2x_goride_eng_desktop.jpg"
+                        srcset="https://lelogama.go-jek.com/cache/5c/a2/5ca22bf029c6e58a43e4b9469f39cfbf.jpg 400w, https://lelogama.go-jek.com/cache/c8/63/c863156106bdbcfb56b4e5086be43c47.jpg 800w, https://lelogama.go-jek.com/cache/b6/80/b680c53ab6bebbeaf87a76970fcf1d2d.jpg 3000w"
                         media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
-                      <img src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
-                        srcset="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp 400w, https://lelogama.go-jek.com/cache/e7/12/e712b469c5ba82dfc12b28994c5c4943.webp 800w, https://lelogama.go-jek.com/cache/fb/4f/fb4fc1d92297b677190d004542fa133a.webp 3000w"
-                        alt="GO-JEK" type="image/webp">
                       <img
-                        src="https://lelogama.go-jek.com/component/banner/picture_mobile/Go-Food_English2x_mobile_2.jpg"
-                        srcset="https://lelogama.go-jek.com/cache/ea/ab/eaabc0c21eea1ad5a83b826478583c34.jpg 400w, https://lelogama.go-jek.com/cache/00/eb/00eb158b9d1e8753f1300874217e1f0b.jpg 800w, https://lelogama.go-jek.com/cache/1f/b2/1fb204aad066b09c578eb661fb57154e.jpg 3000w"
+                        src="https://lelogama.go-jek.com/component/banner/picture_mobile/english_go-ride2x_mobile_2.jpg"
+                        srcset="https://lelogama.go-jek.com/cache/cb/2a/cb2a2ae55b2adc6ceec8f2cd17c097fc.jpg 400w, https://lelogama.go-jek.com/cache/48/55/4855809cb1bf238f0dc39e1a25829cb1.jpg 800w, https://lelogama.go-jek.com/cache/24/bf/24bf5ff2d62d2d66ac1e6a44e1518ba3.jpg 3000w"
                         alt="GO-JEK" type="image/jpeg">
-                    </picture>
-
-                  </div>
-                </div>
-              </a></div>
-              <div>
-              <a href="https://www.gojek.com/gopay/" class="slick-slide" style="width: 328px;" tabindex="-1"
-                role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03" data-slick-index="3"
-                aria-hidden="true">
-                <div class="col-12">
-                  <div class="information-1--cards__wrapper">
-                    <picture>
-                      <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
-                        srcset="https://lelogama.go-jek.com/cache/a1/24/a124c043aff3e201f3111141b8390bb0.webp 400w, https://lelogama.go-jek.com/cache/1f/83/1f83acc5e58f0fa0eaba374af6c9a0a0.webp 800w, https://lelogama.go-jek.com/cache/5e/ba/5eba52e1c04e9568038e22f187051284.webp 3000w"
-                        media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
-                      <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
-                        srcset="https://lelogama.go-jek.com/cache/57/2a/572a7e524d3fbe4d556363e6ea45dda9.jpg 400w, https://lelogama.go-jek.com/cache/69/7f/697f14adce016fb2b02227e3c415a944.jpg 800w, https://lelogama.go-jek.com/cache/47/8d/478d359fe20e201e46ff785a5e4afe18.jpg 3000w"
-                        media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
-                      <img src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
-                        srcset="https://lelogama.go-jek.com/cache/a1/24/a124c043aff3e201f3111141b8390bb0.webp 400w, https://lelogama.go-jek.com/cache/1f/83/1f83acc5e58f0fa0eaba374af6c9a0a0.webp 800w, https://lelogama.go-jek.com/cache/5e/ba/5eba52e1c04e9568038e22f187051284.webp 3000w"
+                      <img src="https://lelogama.go-jek.com/component/banner/picture/english2x_goride_eng_desktop.jpg"
+                        srcset="https://lelogama.go-jek.com/cache/e4/f0/e4f0751ff86f43f479c394036f2b00e1.webp 400w, https://lelogama.go-jek.com/cache/d8/fc/d8fc3edd3afec2ca6c03605169ac767f.webp 800w, https://lelogama.go-jek.com/cache/99/1e/991e329ebb01d68dfadf0dd606b4a4cb.webp 3000w"
                         alt="GO-JEK" type="image/webp">
-                      <img src="https://lelogama.go-jek.com/component/banner/picture_mobile/Gopay_English2x_mobile2.jpg"
-                        srcset="https://lelogama.go-jek.com/cache/48/e1/48e1a2ccff3e97bb281c8bd645ad6c60.jpg 400w, https://lelogama.go-jek.com/cache/d6/92/d692fabd74f722c83b6fcd141c8f449f.jpg 800w, https://lelogama.go-jek.com/cache/5f/c2/5fc2cfe05008de5b6744562e01b341e6.jpg 3000w"
-                        alt="GO-JEK" type="image/jpeg">
                     </picture>
 
                   </div>
-                </div>
-              </a></div>
+                </a>
+              </div>
+              <div class="row no-gutters">
+                <a href="https://www.gojek.com/gocar/">
+                  <div class="col-12 information-1--cards__wrapper pl-0 pr-2">
+                    <picture>
+                      <source src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
+                        srcset="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp 400w, https://lelogama.go-jek.com/cache/e7/ae/e7ae70f755cb8acde2917c52f4089d5a.webp 800w, https://lelogama.go-jek.com/cache/2b/8c/2b8c80d1c81b2a57e3cc0642890ef22a.webp 3000w"
+                        media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
+                      <source src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
+                        srcset="https://lelogama.go-jek.com/cache/b6/b6/b6b6d29a1cb58e83c4af0319c7be31a8.jpg 400w, https://lelogama.go-jek.com/cache/68/89/68898db246473a67bc6ba83fd3a0831b.jpg 800w, https://lelogama.go-jek.com/cache/6b/d9/6bd935ed29fd40502e974dbd71faa5c0.jpg 3000w"
+                        media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
+                      <img src="https://lelogama.go-jek.com/component/banner/picture_mobile/English_gocar_mobile.jpg"
+                        srcset="https://lelogama.go-jek.com/cache/22/62/22624d0e3a1dab0559fd64eba1d8ffa4.jpg 400w, https://lelogama.go-jek.com/cache/8f/8b/8f8baeea17e9d3a795239e0818f6a47d.jpg 800w, https://lelogama.go-jek.com/cache/78/86/7886d9408aa59dd23a5c15dcc0c50586.jpg 3000w"
+                        alt="GO-JEK" type="image/jpeg">
+                      <img src="https://lelogama.go-jek.com/component/banner/picture/English_gocar_dekstop_2.jpg"
+                        srcset="https://lelogama.go-jek.com/cache/b3/b8/b3b8864b0f7bde4d752514aa891dfb35.webp 400w, https://lelogama.go-jek.com/cache/e7/ae/e7ae70f755cb8acde2917c52f4089d5a.webp 800w, https://lelogama.go-jek.com/cache/2b/8c/2b8c80d1c81b2a57e3cc0642890ef22a.webp 3000w"
+                        alt="GO-JEK" type="image/webp">
+                    </picture>
+
+                  </div>
+                </a>
+              </div>
+              <div class="row no-gutters">
+                <a href="https://www.gojek.com/gofood/">
+                  <div class="">
+                    <div class="col-12 information-1--cards__wrapper pl-0 pr-2">
+                      <picture>
+                        <source
+                          src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
+                          srcset="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp 400w, https://lelogama.go-jek.com/cache/e7/12/e712b469c5ba82dfc12b28994c5c4943.webp 800w, https://lelogama.go-jek.com/cache/fb/4f/fb4fc1d92297b677190d004542fa133a.webp 3000w"
+                          media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
+                        <source
+                          src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
+                          srcset="https://lelogama.go-jek.com/cache/30/dc/30dc1fae2db098f7698fefa813d61e19.jpg 400w, https://lelogama.go-jek.com/cache/99/28/9928ce0309ebd9a8c31317e7609aa8e9.jpg 800w, https://lelogama.go-jek.com/cache/a1/7a/a17a94f2226490a44d0af15471dc3e07.jpg 3000w"
+                          media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
+                        <img
+                          src="https://lelogama.go-jek.com/component/banner/picture_mobile/Go-Food_English2x_mobile_2.jpg"
+                          srcset="https://lelogama.go-jek.com/cache/ea/ab/eaabc0c21eea1ad5a83b826478583c34.jpg 400w, https://lelogama.go-jek.com/cache/00/eb/00eb158b9d1e8753f1300874217e1f0b.jpg 800w, https://lelogama.go-jek.com/cache/1f/b2/1fb204aad066b09c578eb661fb57154e.jpg 3000w"
+                          alt="GO-JEK" type="image/jpeg">
+                        <img src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_gofood_2.jpg"
+                          srcset="https://lelogama.go-jek.com/cache/dc/7d/dc7dc97291c51ff4e69cf791fe55f726.webp 400w, https://lelogama.go-jek.com/cache/e7/12/e712b469c5ba82dfc12b28994c5c4943.webp 800w, https://lelogama.go-jek.com/cache/fb/4f/fb4fc1d92297b677190d004542fa133a.webp 3000w"
+                          alt="GO-JEK" type="image/webp">
+                      </picture>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="row no-gutters">
+                <a href="https://www.gojek.com/gopay/">
+                  <div class="">
+                    <div class="col-12 information-1--cards__wrapper pl-0 pr-2">
+                      <picture>
+                        <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
+                          srcset="https://lelogama.go-jek.com/cache/a1/24/a124c043aff3e201f3111141b8390bb0.webp 400w, https://lelogama.go-jek.com/cache/1f/83/1f83acc5e58f0fa0eaba374af6c9a0a0.webp 800w, https://lelogama.go-jek.com/cache/5e/ba/5eba52e1c04e9568038e22f187051284.webp 3000w"
+                          media="(min-width: 769px)" alt="GO-JEK" type="image/webp">
+                        <source src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
+                          srcset="https://lelogama.go-jek.com/cache/57/2a/572a7e524d3fbe4d556363e6ea45dda9.jpg 400w, https://lelogama.go-jek.com/cache/69/7f/697f14adce016fb2b02227e3c415a944.jpg 800w, https://lelogama.go-jek.com/cache/47/8d/478d359fe20e201e46ff785a5e4afe18.jpg 3000w"
+                          media="(min-width: 769px)" alt="GO-JEK" type="image/jpeg">
+                        <img
+                          src="https://lelogama.go-jek.com/component/banner/picture_mobile/Gopay_English2x_mobile2.jpg"
+                          srcset="https://lelogama.go-jek.com/cache/48/e1/48e1a2ccff3e97bb281c8bd645ad6c60.jpg 400w, https://lelogama.go-jek.com/cache/d6/92/d692fabd74f722c83b6fcd141c8f449f.jpg 800w, https://lelogama.go-jek.com/cache/5f/c2/5fc2cfe05008de5b6744562e01b341e6.jpg 3000w"
+                          alt="GO-JEK" type="image/jpeg">
+                        <img src="https://lelogama.go-jek.com/component/banner/picture/english2x_desktop_2_gopay.jpg"
+                          srcset="https://lelogama.go-jek.com/cache/a1/24/a124c043aff3e201f3111141b8390bb0.webp 400w, https://lelogama.go-jek.com/cache/1f/83/1f83acc5e58f0fa0eaba374af6c9a0a0.webp 800w, https://lelogama.go-jek.com/cache/5e/ba/5eba52e1c04e9568038e22f187051284.webp 3000w"
+                          alt="GO-JEK" type="image/webp">
+                      </picture>
+
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
-            <ul class="slick-dots" style="" role="tablist">
-              <li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00"
-                  aria-controls="slick-slide00" aria-label="1 of 4" tabindex="0" aria-selected="true">1</button></li>
-              <li role="presentation"><button type="button" role="tab" id="slick-slide-control01"
-                  aria-controls="slick-slide01" aria-label="2 of 4" tabindex="-1">2</button></li>
-              <li role="presentation"><button type="button" role="tab" id="slick-slide-control02"
-                  aria-controls="slick-slide02" aria-label="3 of 4" tabindex="-1">3</button></li>
-              <li role="presentation"><button type="button" role="tab" id="slick-slide-control03"
-                  aria-controls="slick-slide03" aria-label="4 of 4" tabindex="-1">4</button></li>
-            </ul>
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- I use <article> tag instead of <section> because this component will contains information about something,
@@ -473,8 +467,8 @@
                 </div>
               </div>
               <div id="f-transport-logistics"
-                class="footer-item footer-item--dropdown js-toggler-parent footer-item--dropdown-1">
-                <h3 class="footer-item__title js-toggler">
+                class="footer-item footer-item--dropdown footer-item--dropdown-1">
+                <h3 class="footer-item__title f-dropdown-toggler">
                   Transport &amp; Logistics
                   <i class="footer-item__caret i i-caret-down"></i>
                 </h3>
@@ -492,8 +486,8 @@
                 </div>
               </div>
 
-              <div id="f-food-fmcg" class="footer-item footer-item--dropdown js-toggler-parent footer-item--dropdown-2">
-                <h3 class="footer-item__title js-toggler">
+              <div id="f-food-fmcg" class="footer-item footer-item--dropdown footer-item--dropdown-2">
+                <h3 class="footer-item__title">
                   Food &amp; FMCG
                   <i class="footer-item__caret i i-caret-down"></i>
                 </h3>
@@ -510,8 +504,8 @@
                 </div>
               </div>
 
-              <div id="f-payments" class="footer-item footer-item--dropdown js-toggler-parent footer-item--dropdown-3">
-                <h3 class="footer-item__title js-toggler">
+              <div id="f-payments" class="footer-item footer-item--dropdown footer-item--dropdown-3">
+                <h3 class="footer-item__title">
                   Payments
                   <i class="footer-item__caret i i-caret-down"></i>
                 </h3>
@@ -531,8 +525,8 @@
                 </div>
               </div>
               <div id="f-daily-needs"
-                class="footer-item footer-item--dropdown js-toggler-parent footer-item--dropdown-4">
-                <h3 class="footer-item__title js-toggler">
+                class="footer-item footer-item--dropdown footer-item--dropdown-4">
+                <h3 class="footer-item__title">
                   Daily Needs
                   <i class="footer-item__caret i i-caret-down"></i>
                 </h3>
@@ -558,8 +552,8 @@
               </div>
 
               <div id="f-news-entertainment"
-                class="footer-item footer-item--dropdown js-toggler-parent footer-item--dropdown-5">
-                <h3 class="footer-item__title js-toggler">
+                class="footer-item footer-item--dropdown footer-item--dropdown-5">
+                <h3 class="footer-item__title">
                   News &amp; Entertainment
                   <i class="footer-item__caret i i-caret-down"></i>
                 </h3>
@@ -608,7 +602,7 @@
               </div>
 
 
-              <div id="f-location" class="footer-item footer-item--location js-toggler-parent">
+              <div id="f-location" class="footer-item footer-item--location">
                 <h3 id="country-select-button" class="footer-item__title footer-item__title d-md-none">
                   <span class="footer-item__title-left">
                     <i class="footer-item__icon i i-icon i-location"></i>
@@ -624,7 +618,7 @@
                 </h3>
 
                 <h3 id="country-select-desktop"
-                  class="footer-item__title footer-item__title--desktop d-none d-md-flex js-toggler">
+                  class="footer-item__title footer-item__title--desktop d-none d-md-flex">
                   <span class="footer-item__title-left">
                     <i class="footer-item__icon i i-icon i-location"></i>
                     <span class="footer-item__selected">
@@ -667,10 +661,10 @@
               </div>
               <div id="f-download" class="footer-item footer-item--download">
                 <h3 class="footer-item__title">Download</h3>
-                <div class="c-download">
-                  <div class="c-download__container">
+                <div class="f-download">
+                  <div class="f-download__container">
                     <a href="https://gojek.onelink.me/2351932542?af_banner=true&amp;pid=Go-Jek_Web&amp;c=WebToAppBanner&amp;af_adset=bottom-banner&amp;af_ad=%2Fv4%2F&amp;af_dp=gojek%3A%2F%2Fhome"
-                      class="c-download__item">
+                      class="f-download__item">
                       <img data-src="https://lelogama.go-jek.com/component/nav/picture/google-play-badge3x-p.png"
                         data-srcset="https://lelogama.go-jek.com/cache/1e/aa/1eaaab41ce5c18194149550285c565b4.jpg 400w, https://lelogama.go-jek.com/cache/01/d1/01d1b997ef8a62cd96af80273dcc60b2.jpg 800w, https://lelogama.go-jek.com/cache/c5/0b/c50ba49bc9d41657404189fafe60cefc.jpg 3000w"
                         class="lazy loaded" alt="Play Store Download Link" type="image/jpeg"
@@ -680,7 +674,7 @@
                     </a>
 
                     <a href="https://gojek.onelink.me/2351932542?af_banner=true&amp;pid=Go-Jek_Web&amp;c=WebToAppBanner&amp;af_adset=bottom-banner&amp;af_ad=%2Fv4%2F&amp;af_dp=gojek%3A%2F%2Fhome"
-                      class="c-download__item">
+                      class="f-download__item">
                       <img data-src="https://lelogama.go-jek.com/component/nav/picture/app-store-badge3x-p.png"
                         data-srcset="https://lelogama.go-jek.com/cache/54/5b/545b0e137c6d007b78c8da80ae61aaff.jpg 400w, https://lelogama.go-jek.com/cache/14/c7/14c78667d62c014b49ebb21158fa0a0a.jpg 800w, https://lelogama.go-jek.com/cache/79/34/79349ff69dd80242d75601fa3f1f94a0.jpg 3000w"
                         class="lazy loaded" alt="App Store Download Link" type="image/jpeg"
@@ -709,27 +703,11 @@
     </div>
   </footer>
 
-  <script src="js/base.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
-  <script>
-    var slider = tns({
-      container: '.information-1__slider-wrapper',
-      items: 1,
-      responsive: {
-        640: {
-          edgePadding: 20,
-          gutter: 20,
-          items: 2
-        },
-        700: {
-          gutter: 30
-        },
-        900: {
-          items: 3
-        }
-      }
-    });
-  </script>
+  <script src="js/base.js"></script>
+  <!-- <script>
+    
+  </script> -->
 </body>
 
 </html>
