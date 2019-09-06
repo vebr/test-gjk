@@ -1,6 +1,7 @@
-
 @-webkit-keyframes markChange-0 {
-  0%, to {
+
+  0%,
+  to {
     background: unset;
   }
 
@@ -10,7 +11,9 @@
 }
 
 @-moz-keyframes markChange-0 {
-  0%, to {
+
+  0%,
+  to {
     background: unset;
   }
 
@@ -20,7 +23,9 @@
 }
 
 @keyframes markChange-0 {
-  0%, to {
+
+  0%,
+  to {
     background: unset;
   }
 
@@ -60,8 +65,8 @@ header {
 }
 
 header.is-active {
-  -webkit-box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
 }
 
 .header__menu {
@@ -303,7 +308,7 @@ header.is-active {
 }
 
 .header__link-item a:hover,
-.information__link:hover {
+.si__link:hover {
   color: #00aa13;
 }
 
@@ -660,7 +665,7 @@ i {
   }
 }
 
-.c-card__images__footer {
+.si-card__images__footer {
   height: 40px;
   background: #1c1d1d;
   color: #fff;
@@ -676,8 +681,8 @@ i {
   text-decoration: none;
 }
 
-.c-card__images--with-footer__footer p,
-.c-card__images__footer p {
+.si-card__images--with-footer__footer p,
+.si-card__images__footer p {
   text-decoration: none;
   font-weight: 700;
   text-align: center;
@@ -685,12 +690,12 @@ i {
   margin: 0;
 }
 
-.c-card__images--with-footer__footer:hover,
-.c-card__images__footer:hover {
+.si-card__images--with-footer__footer:hover,
+.si-card__images__footer:hover {
   color: #fff;
 }
 
-.c-card__images picture img {
+.si-card__images picture img {
   position: absolute;
   width: 100%;
   top: 0;
@@ -1990,57 +1995,57 @@ i {
 
 
 @media screen and (min-width:769px) {
-  .information__text--right {
+  .si__text--right {
     padding-left: 22px !important;
   }
 }
 
 @media screen and (min-width:1024px) {
-  .information__text--right {
+  .si__text--right {
     padding-left: 90px !important;
   }
 }
 
-.information__title {
+.si__title {
   color: #1c1d1d;
   font-family: MaisonNeueExtended-Bold, sans-serif;
   line-height: 1.41;
 }
 
 @media screen and (max-width:767px) {
-  .information__title {
+  .si__title {
     font-size: 21px;
     line-height: 28px;
   }
 }
 
 @media screen and (min-width:768px) {
-  .information__title {
+  .si__title {
     font-size: 32px;
   }
 }
 
-.information__title--medium {
+.si__title--medium {
   font-size: 24px;
 }
 
 @media screen and (min-width:768px) {
-  .information__title--medium {
+  .si__title--medium {
     font-size: 37px;
   }
 }
 
-.information__title--sub {
+.si__title--sub {
   font-size: 21px;
 }
 
 @media screen and (min-width:768px) {
-  .information__title--sub {
+  .si__title--sub {
     font-size: 28px;
   }
 }
 
-.information__video-container {
+.si__video-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2066,25 +2071,25 @@ i {
   align-items: center;
 }
 
-.information__wrapper {
+.si__wrapper {
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.information__image {
+.si__image {
   border-radius: 16px;
 }
 
-.information__image--mobile {
+.si__image--mobile {
   border-radius: 16px;
   min-height: 207px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.information__intro {
+.si__intro {
   color: #1c1d1d;
   font-family: MaisonNeueExtended-Bold, sans-serif;
   font-size: 24px;
@@ -2093,41 +2098,53 @@ i {
 }
 
 @media screen and (min-width:769px) {
-  .information__intro {
+  .si__intro {
     font-size: 37px;
     margin-bottom: 48px;
     line-height: 1.41;
   }
 }
 
-.information__intro--medium {
+.si__intro--medium {
   margin-bottom: 32px;
 }
 
 @media screen and (min-width:769px) {
-  .information__intro--medium {
+  .si__intro--medium {
     margin-bottom: 48px;
   }
 }
 
-.information__description {
+.si__description {
   font-family: MaisonNeue-Book, sans-serif;
   line-height: 1.5;
   font-size: 1rem;
 }
 
 .information-2__description p,
-.information__description p {
+.si__description p {
   font-size: 1rem;
+}
+@media screen and (min-width: 769px) {
+  .si-2__description {
+    font-size: 1.125rem !important;
+    line-height: 1.33 !important;
+  }
+}
+
+.si-2__description {
+    font-family: "MaisonNeue-Book",sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
 }
 
 @media screen and (min-width:769px) {
-  .information__description {
+  .si__description {
     line-height: 1.33;
   }
 }
 
-.information__link {
+.si__link {
   font-size: 18px;
   line-height: 1.33;
   color: #00aa13;
@@ -2136,12 +2153,12 @@ i {
   width: auto;
 }
 
-.information__link .gi {
+.si__link .gi {
   margin-left: 4px;
   font-size: 16px;
 }
 
-.information__link:after {
+.si__link:after {
   content: '';
   position: absolute;
   width: -moz-calc(100% - 16px);
@@ -2164,7 +2181,7 @@ i {
   transition: all .3s;
 }
 
-.information__link:hover:after {
+.si__link:hover:after {
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -2172,6 +2189,25 @@ i {
   visibility: visible;
 }
 
+
+.information__title {
+  color: #1c1d1d;
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  line-height: 1.41;
+}
+
+@media screen and (max-width:767px) {
+  .information__title {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .information__title {
+    font-size: 32px;
+  }
+}
 
 .information-1 {
   position: relative;
@@ -2281,6 +2317,7 @@ i {
 }
 
 @media screen and (min-width: 680px) {
+
   .information-1--cards__wrapper,
   .information-1--cards__wrapper picture img {
     height: 320px;
@@ -2556,7 +2593,7 @@ i {
   margin-right: 8px;
 }
 
-.tns-nav .tns-nav-active{ 
+.tns-nav .tns-nav-active {
   background-color: #00aa13;
   color: #00aa13;
 }
@@ -2585,19 +2622,21 @@ i {
 
 /* Drop Down Styles
 ================================ */
-.mobile-language__wrapper.open  {
+.mobile-language__wrapper.open {
   list-style: none;
   color: #fff;
-  overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
-  height: 110px; /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
+  overflow: hidden;
+  /* When ul height is reduced, ensure overflowing li are not shown */
+  height: 110px;
+  /* 172px = (38 (li) + 5 (li border)) * 4 (number of li) */
   width: 200px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
   -webkit-transition: height 0.3s ease;
-          transition: height 0.3s ease;
-          padding-bottom: 1rem;
-    border-bottom: 1px solid #e8e8e8;
+  transition: height 0.3s ease;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .mobile-language__wrapper {
@@ -2607,7 +2646,7 @@ i {
   height: 28px;
   text-align: center;
   -webkit-transition: height 0.3s ease;
-          transition: height 0.3s ease;
+  transition: height 0.3s ease;
 }
 
 .mobile-language__wrapper.open .mobile-language__switcher {
@@ -2620,20 +2659,20 @@ i {
 
 .mobile-language__switcher {
   padding: 0;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 0;
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: height 150ms cubic-bezier(0,0,.2,1),margin 150ms cubic-bezier(0,0,.2,1) 150ms,opacity 150ms cubic-bezier(0,0,.2,1);
-    -moz-transition: height 150ms cubic-bezier(0,0,.2,1),margin 150ms cubic-bezier(0,0,.2,1) 150ms,opacity 150ms cubic-bezier(0,0,.2,1);
-    transition: height 150ms cubic-bezier(0,0,.2,1),margin 150ms cubic-bezier(0,0,.2,1) 150ms,opacity 150ms cubic-bezier(0,0,.2,1);
-    height: 0;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: height 150ms cubic-bezier(0, 0, .2, 1), margin 150ms cubic-bezier(0, 0, .2, 1) 150ms, opacity 150ms cubic-bezier(0, 0, .2, 1);
+  -moz-transition: height 150ms cubic-bezier(0, 0, .2, 1), margin 150ms cubic-bezier(0, 0, .2, 1) 150ms, opacity 150ms cubic-bezier(0, 0, .2, 1);
+  transition: height 150ms cubic-bezier(0, 0, .2, 1), margin 150ms cubic-bezier(0, 0, .2, 1) 150ms, opacity 150ms cubic-bezier(0, 0, .2, 1);
+  height: 0;
 }
 
-.mobile-language__switcher-item  {
+.mobile-language__switcher-item {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -moz-box-flex: 1;
@@ -2656,13 +2695,14 @@ i {
   border: 2px solid #fff;
   border-radius: 28px;
   padding: 12px 1rem;
-  font-family: "MaisonNeue-Demi",sans-serif;
+  font-family: "MaisonNeue-Demi", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
   text-align: center;
 }
 
-.mobile-language__switcher, .mobile-language__switcher-item {
+.mobile-language__switcher,
+.mobile-language__switcher-item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2677,4 +2717,536 @@ i {
 .mobile-language__switcher-item.active {
   color: #00aa13;
   background-color: #fff;
+}
+
+
+
+.si__title {
+  color: #1c1d1d;
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  line-height: 1.41;
+}
+
+@media screen and (max-width:767px) {
+  .si__title {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .si__title {
+    font-size: 32px;
+  }
+}
+
+.si__title--medium {
+  font-size: 24px;
+}
+
+@media screen and (min-width:768px) {
+  .si__title--medium {
+    font-size: 37px;
+  }
+}
+
+.si__title--sub {
+  font-size: 21px;
+}
+
+@media screen and (min-width:768px) {
+  .si__title--sub {
+    font-size: 28px;
+  }
+}
+
+
+.si-card {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  height: 100%;
+}
+
+.si-card__body {
+  color: #494A4A;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-top: .5rem;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.si-card__body--content {
+  font-size: 1.125rem;
+}
+
+.si-card__body .header {
+  font-size: 21px;
+  color: #1c1d1d;
+  line-height: 1.33;
+  font-family: MaisonNeue-Book, sans-serif;
+}
+
+@media screen and (min-width:769px) {
+  .si-card {
+    width: 247px;
+  }
+  .si-card__body {
+    padding-top: 1rem;
+  }
+}
+
+.si-card__description {
+  font-size: 14px;
+}
+
+@media screen and (min-width:769px) {
+  .si-card__description {
+    font-size: 16px;
+  }
+}
+
+.si-card__images {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  max-width: initial;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.si-card__images__content {
+  padding: 0 .5rem;
+  height: 110px;
+}
+
+.si-card__images__content__title {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.56;
+  letter-spacing: .6px;
+}
+
+.si-card__images__footer {
+  height: 40px;
+  background: #1c1d1d;
+  color: #fff;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.si-card__images--with-footer__footer p,
+.si-card__images__footer p {
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  font-size: .8125rem;
+  margin: 0;
+}
+
+.si-card__images--with-footer__footer:hover,
+.si-card__images__footer:hover {
+  color: #fff;
+}
+
+.si-card__images picture img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 150px;
+}
+
+@media screen and (min-width:769px) {
+  .si-card__images {
+    height: 170px;
+    border-radius: 8px;
+  }
+
+  .si-card__images__content {
+    padding: 0 2rem;
+    height: 170px;
+  }
+
+  .si-card__images__content__title {
+    line-height: 1.25;
+    letter-spacing: .7px;
+  }
+
+  .si-card__images picture img {
+    height: 170px;
+  }
+}
+
+.si-card__images--with-footer,
+.si-card__images--with-footer picture img {
+  height: 150px;
+}
+
+.si-card__images--with-footer__content {
+  padding: 0 .5rem;
+  height: 110px;
+}
+
+.si-card__images--with-footer__content__title {
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.56;
+  letter-spacing: .6px;
+}
+
+.si-card__icon,
+.si-card__images--with-footer__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.si-card__images--with-footer__footer {
+  height: 40px;
+  background: #1c1d1d;
+  color: #fff;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-decoration: none;
+}
+
+.si-card__images--with-footer__footer p {
+  font-size: .75rem;
+}
+
+.si-card__icon {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.si-card__icon .gi {
+  background-color: #1c1d1d;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: .5rem;
+  padding: .5rem;
+}
+
+.si-card__icon .gi.gi-icon-gofood {
+  background-color: #ee2737;
+}
+
+.si-card__icon .gi.gi-icon-gobills,
+.si-card__icon .gi.gi-icon-gopay,
+.si-card__icon .gi.gi-icon-gopoints {
+  background-color: #00aed6;
+}
+
+.si-card__icon .gi.gi-icon-gocar,
+.si-card__icon .gi.gi-icon-goride,
+.si-card__icon .gi.gi-icon-gosend {
+  background-color: #00aa13;
+}
+
+.si-card__icon .title {
+  color: #1c1d1d;
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  font-size: 1.3125rem;
+}
+
+@media screen and (min-width:769px) {
+  .si-card__icon .title {
+    font-size: 1.5rem;
+  }
+}
+
+.si-card__icon--blog {
+  height: 16px;
+}
+
+@media screen and (max-width:768px) {
+  .si-card__icon--service {
+    height: 90px;
+  }
+}
+
+.si-card__icon--white .gi {
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
+}
+
+.si-card__icon--white .title {
+  font-size: 2rem;
+  color: #fff;
+}
+
+@media screen and (min-width:769px) {
+  .si-card__icon {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+.si-card__link {
+  font-family: MaisonNeue-Demi, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #00aa13;
+  text-decoration: none;
+  width: auto;
+}
+
+.si-card__link .gi {
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.si-card__title {
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  color: #1c1d1d;
+}
+
+.si-card--channel {
+  margin-bottom: 32px;
+}
+
+.si-card--channel:after {
+  content: '';
+  width: 159px;
+  height: 1px;
+  background-color: #bbb;
+  margin-top: 16px;
+}
+
+@media screen and (min-width:769px) {
+  .si-card--channel:after {
+    margin-top: 32px;
+  }
+
+  .si-card--channel {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 calc(100%/3);
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 calc(100%/3);
+    flex: 0 0 calc(100%/3);
+    max-width: -moz-calc(100%/3);
+    max-width: calc(100%/3);
+    margin-bottom: 48px;
+  }
+}
+
+.si-card-item {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.si-card-item:focus {
+  outline: 0;
+}
+
+.si-card-item__body,
+.si-card-item__header {
+  border-radius: 1rem 1rem 0 0;
+  background-color: #339bcf;
+  padding: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.si-card-item__body {
+  background-color: #0082c4;
+  padding: 1.5rem 2rem 2rem;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.si-card-item__title {
+  font-family: MaisonNeueExtended-Bold, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.si-card-item__description {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.si-card-item__footer {
+  margin-top: 32px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.si-card-item__footer>p {
+  font-size: 1rem;
+  line-height: 24px;
+  min-height: 24px;
+}
+
+.si-card--mobile-slider .si-card-item {
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width:769px) {
+  .si-card-item {
+    margin-right: 2rem;
+  }
+
+  .si-card-item__description {
+    font-size: 21px;
+    line-height: 28px;
+  }
+
+  .si-card--mobile-slider .si-card-item {
+    margin-right: 2rem;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+
+  .u-hide--tablet,
+  .u-hide--tablet.flex {
+    display: none !important;
+  }
+
+  .u-hide--tablet.active {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .u-hide--tablet-desktop {
+    display: none !important;
+  }
+
+  .u-hide--tablet-desktop.active {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .u-hide--mobile {
+    display: none !important;
+  }
+
+  .u-hide--mobile.active {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width:769px) {
+  .u-hide--desktop {
+    display: none !important;
+  }
+
+  .u-hide--desktop.active {
+    display: block !important;
+  }
+}
+
+.u-hide--all {
+  display: none;
+}
+
+
+@media (min-width: 20em) {
+  #tns1-iw {
+    margin: 0px !important;
+  }
+  #tns2-iw {
+    margin-left: 0px !important;
+  }
+  #tns3-iw {
+    margin-left: 0px !important;
+  }
+  #tns4-iw {
+    margin-left: 0px !important;
+  }
+  #tns5-iw {
+    margin-left: 0px !important;
+  }
+}
+
+
+.cards-slider {
+  height: 122px;
+}
+
+@media screen and (min-width:769px) {
+  .cards-slider {
+    height: 268px;
+  }
 }

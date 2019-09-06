@@ -96,6 +96,143 @@ const slider = tns({
   }
 });
 
+
+// The reason I don't use slick.js, is that slick.js needs jQuery and I don't use jQuery because it has a lot of vulnerabilities 
+let sliderService1 = tns({
+  container: '.service-1__slider-wrapper',
+  items: 2.08,
+  nav: true,
+  navPosition: "bottom",
+  prevButton: true,
+  mouseDrag: true,
+  // center: true,
+  // autoHeight: true,
+  "slideBy": 2.6,
+  loop: false,
+  responsive: {
+    320: {
+      edgePadding: 20,
+      gutter: 20,
+    },
+    769: {
+      // autoHeight:true,
+      // autoWidth: true,
+      edgePadding: 200,
+      gutter: 0,
+      items: 4,
+      nav: false,
+    }
+  }
+});
+
+let sliderService2 = tns({
+  "container": '.service-2__slider-wrapper',
+  "nav": true,
+  items: 2.08,
+  "navPosition": "bottom",
+  "prevButton": true,
+  "mouseDrag": true,
+  // center: true,
+  // autoHeight: true,
+  "slideBy": 2.6,
+  "loop": false,
+  "responsive": {
+    "320": {
+      "edgePadding": 20,
+      gutter: 20,
+    },
+    "769": {
+      "edgePadding": 0,
+      gutter: 20,
+      items: 3,
+      nav: false,
+    }
+  }
+});
+
+
+let sliderService3 = tns({
+  "container": '.service-3__slider-wrapper',
+  "nav": true,
+  items: 2.08,
+  controls:false,
+  "navPosition": "none",
+  "mouseDrag": true,
+  // center: true,
+  // autoHeight: true,
+  "slideBy": 2.6,
+  "loop": false,
+  "responsive": {
+    "320": {
+      "edgePadding": 20,
+      gutter: 20,
+      items:2.08,
+    },
+    "769": {
+      edgePadding: 20,
+      gutter: 5,
+      "fixedWidth": 268,
+      items: 4.1,
+      nav: false,
+    }
+  }
+});
+
+let sliderService4 = tns({
+  "container": '.service-4__slider-wrapper',
+  "nav": true,
+  items: 2.08,
+  controls:false,
+  "navPosition": "none",
+  "mouseDrag": true,
+  // center: true,
+  // autoHeight: true,
+  "slideBy": 2.6,
+  "loop": false,
+  "responsive": {
+    "320": {
+      "edgePadding": 20,
+      gutter: 20,
+      items:2.08,
+    },
+    "769": {
+      edgePadding: 20,
+      gutter: 5,
+      "fixedWidth": 268,
+      items: 4,
+      nav: false,
+    }
+  }
+});
+
+let sliderService5 = tns({
+  "container": '.service-5__slider-wrapper',
+  "nav": true,
+  items: 2.08,
+  controls:false,
+  "navPosition": "none",
+  "mouseDrag": true,
+  // center: true,
+  // autoHeight: true,
+  "slideBy": 2.6,
+  "loop": false,
+  "responsive": {
+    "320": {
+      "edgePadding": 20,
+      gutter: 20,
+      items:2.08,
+    },
+    "769": {
+      edgePadding: 20,
+      gutter: 5,
+      "fixedWidth": 268,
+      items: 2,
+      nav: false,
+    }
+  }
+});
+
+
 let scrollpos = window.scrollY;
 let header = document.getElementById("header");
 
