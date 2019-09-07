@@ -50,8 +50,8 @@ if (workbox) {
           cacheName: 'cache-Images',
           plugins: [
               new workbox.expiration.Plugin({
-                  maxAgeSeconds: 60 * 60 * 24 * 7,
-                  maxEntries: 50,
+                  maxAgeSeconds: 60 * 60 * 24 * 7, // cache for one week
+                  maxEntries: 50,// only cache 50 request
                   purgeOnQuotaError: true
               })
           ]
