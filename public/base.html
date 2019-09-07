@@ -64,7 +64,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/b-bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
@@ -211,17 +211,17 @@
         <!-- Why I use <section> tag first and the second component and the fourth using <article> tag?
         according https://www.lifewire.com/html5-section-element-3467994 we can use <section> if 
         none of the other semantic container elements are appropriate. -->
-        <section class="section-banner__wrapper"> 
+        <section class="section-banner__wrapper--base"> 
             <p class="mt-5 text-center">Banner full goes here</p>
         </section>
 
         <!-- I use <article> tag instead of <section> because this component will contains information about something,
         and I think using the tag <article> make this component looks more semantic -->
-        <article class="container section-information__wrapper">
+        <article class="container section-information__wrapper--base">
             <p class="mt-5 text-center">Section information goes here</p>
         </article>
         
-        <section class="container section-information__wrapper">
+        <section class="container section-information__wrapper--base">
             <div>
                 <p class="mt-5 text-center">Section slider goes here</p>
             </div>
@@ -229,7 +229,7 @@
         
         <!-- I use <article> tag instead of <section> because this component will contains information about something,
           especially on gojek.com page, this component used for list of service and i will separate all those information with section -->
-        <article class="container section-service__wrapper">
+        <article class="container section-service__wrapper--base">
             <div>
                 <p class="mt-5 text-center">Section service goes here</p>
             </div>

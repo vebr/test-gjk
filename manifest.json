@@ -3,7 +3,7 @@
   "short_name": "Gojek",
   "description": "Lebih dari 1 juta driver Gojek siap melayani transportasi online, pesan antar makanan, kirim barang, belanja & pembayaran. Download Gojek sekarang!",
   "lang": "id-ID",
-  "start_url": "https://gojek-test-737a0.firebaseapp.com/index.html",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#00AA13",

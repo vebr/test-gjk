@@ -1,10 +1,11 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 if (workbox) {
+
+  workbox.setConfig({ debug: false });
   // Updating SW lifecycle to update the app after user triggered refresh
   workbox.core.skipWaiting();
   workbox.core.clientsClaim();
-  
   self.addEventListener('install', function(e) {
     e.waitUntil(
       caches.open('html-cache').then(function(cache) {
@@ -27,6 +28,7 @@ if (workbox) {
     new RegExp('/.*'),
     new workbox.strategies.NetworkFirst()
   );
+  
   // 1. stylesheet
   workbox.routing.registerRoute(
       new RegExp('\.css$'),
