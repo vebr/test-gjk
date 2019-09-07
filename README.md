@@ -1,8 +1,9 @@
 # Recreate the landing page of [Gojek](https://gojek.com)
 
 ## Description
-I created this website for retesting for the Frontend Web Developer test, because I know the first one is lame.
 
+I created this website for retesting for the Frontend Web Developer test, because I know the first one is lame.
+And you can find the commented codes on the **index.html** , **base.html**, also on **assets/js/base.js** .
 
 ## Lighthouse Score
 
